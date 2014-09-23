@@ -32,7 +32,7 @@
 	text-transform: uppercase;
 }
 #learndash_next_prev_link a{
-	background-color: #78c8c9;
+	background-color: #ffc000;
 	background-image:url(../images/button.png);
 	border: none;
 	color: #FFF;
@@ -66,14 +66,14 @@
 }
 .widget.pricing .learndash_checkout_buttons input[type="submit"]{
 	padding: 20px 32px !important;
-	background-color: #78c8ce;
+	background-color: #ffc000;
 	width: 100%;
 	text-align: center;
 	font-size: 11px;
 	line-height: 1.6;
 	font-weight: 600;
 	text-transform: uppercase;
-	background-color: #78c8ce;
+	background-color: #ffc000;
 	color: #FFF;
 	border: none;
 	border-radius: 2px;
@@ -87,7 +87,7 @@
 	text-transform: uppercase;
 	font-weight: 600;
 	border-radius:2px;
-	background:#78c8c9;
+	background:#ffc000;
 	color:#FFF;
 }
 

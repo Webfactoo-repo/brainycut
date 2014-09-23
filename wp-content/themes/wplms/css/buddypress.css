@@ -131,7 +131,7 @@ input[type="file"]{
 #item-header-avatar{
 	border-radius: 2px;
 	width:100%;
-	border-bottom:2px solid #78c8c9;
+	border-bottom:2px solid #ffc000;
 }
 
 #content #buddypress{
@@ -382,7 +382,7 @@ body.no-js #buddypress form#whats-new-form textarea {
 .course_students li > ul > li > a:hover,
 .quiz_students li > ul > li > a:hover,
 .assignment_students li > ul > li > a:hover{
-	color:#78c8ce;
+	color:#ffc000;
 }
 .course_students li input[type="checkbox"],
 .quiz_students li input[type="checkbox"],
@@ -575,7 +575,7 @@ body.activity-permalink #buddypress .activity-list li .activity-header > p {
 	color:#FFF;
 }
 #buddypress #item-body span.highlight a{
-	color:#78c8c9;
+	color:#ffc000;
 }
 #item-meta .star-rating{
 	font-size:11px;
@@ -721,7 +721,7 @@ body.activity-permalink .ac-form input[type="submit"]{
 	line-height: 1.6;
 	font-weight: 600;
 	text-transform: uppercase;
-	background-color:#78c8ce;
+	background-color:#ffc000;
 	color: #FFF;
 	border: none;
 	border-radius: 2px;
@@ -774,7 +774,7 @@ body.activity-permalink #buddypress div.activity-meta {
 #buddypress div.activity-meta a ,#buddypress div.activity-meta a.button{
 	padding: 0;
 	background:none;
-	color:#78c8ce;
+	color:#ffc000;
 	margin:0 5px 0 0;
 }
 #buddypress a.activity-time-since {
@@ -991,7 +991,7 @@ font-size: 24px;
 	margin: 5px 0 5px 60px;
 }
 #buddypress .acomment-options a {
-	color: #78c8ce;
+	color: #ffc000;
 	text-transform: uppercase;
 	font-weight: 600;
 }
@@ -1024,7 +1024,7 @@ font-size: 24px;
 	padding:1px 7px;
 	font-size:11px;
 	border-radius: 50%;
-	background: #78c8ce;
+	background: #ffc000;
 	font-weight: 600;
 }
 #buddypress #item-body .total_students+h3{
@@ -1359,7 +1359,7 @@ a.bp-title-button {
 	line-height: 1.6;
 	font-weight: 600;
 	text-transform: uppercase;
-	background-color:#78c8ce;
+	background-color:#ffc000;
 	color: #FFF;
 	border: none;
 	border-radius: 2px;
@@ -1558,7 +1558,7 @@ a.bp-title-button {
 #buddypress a.primary,
 #buddypress a.secondary{
 	font-size:11px;
-	color:#78c8c9;
+	color:#ffc000;
 	font-weight:600;
 	text-transform: uppercase;
 }
@@ -1765,11 +1765,11 @@ a.bp-title-button {
 	max-width:64px;
 	border-radius:50%;
 }
-.activity-inner a{color:#78c8c9;}
+.activity-inner a{color:#ffc000;}
 .bp-primary-action,.bp-secondary-action{
 	font-size:11px;
 	font-weight:600;
-	color:#78c8c9;
+	color:#ffc000;
 	text-transform: uppercase;
 }
 .bp-primary-action.button,.bp-secondary-action.button{color:#FFF;}
@@ -1922,7 +1922,7 @@ a.bp-title-button {
 #latest-update h6 a{
 	font-size:11px;
 	text-transform: uppercase;
-	color:#78c8c9;
+	color:#ffc000;
 	font-weight:600;
 	}
 #latest-update h6 a:after{
@@ -2169,7 +2169,7 @@ body.activity-permalink #buddypress ul.item-list li.activity-item {
 }
 
 #buddypress div.item-list-tabs ul li.current{
-	border-color:#78c8ce;
+	border-color:#ffc000;
 }
 /*
 #buddypress div.item-list-tabs ul li.current:after{
@@ -2208,9 +2208,9 @@ body.activity-permalink #buddypress ul.item-list li.activity-item {
 	margin:5px 0;
 }
 #buddypress div.item-list-tabs#subnav ul li.current a{
-	background-color:#78c8ce;
+	background-color:#ffc000;
 	background-image:url(../images/button.png);
-	border-color:#78c8ce;
+	border-color:#ffc000;
 	color:#FFF;
 }
 .item-action-buttons{
@@ -2244,7 +2244,7 @@ body.activity-permalink #buddypress ul.item-list li.activity-item {
 	top: -2px;
 	right: -6px;
 	padding: 2px 6px;
-	background: #78c8c9;
+	background: #ffc000;
 	color: #FFF;
 	border-radius: 50%;
 }
@@ -2272,7 +2272,7 @@ body.activity-permalink #buddypress ul.item-list li.activity-item {
 	font-size: 12px;
 	line-height: 12px;border-radius: 2px;
 }
-#buddypress div.item-list-tabs#subnav ul li.switch_view a.active{color:#FFF;background:#78c8c9;}
+#buddypress div.item-list-tabs#subnav ul li.switch_view a.active{color:#FFF;background:#ffc000;}
 #buddypress div.item-list-tabs#subnav ul li#instructor-courses-personal-li{max-width:150px;}
 #buddypress div.item-list-tabs#subnav ul li:first-child a{
 	border-top-left-radius: 2px;
@@ -2316,21 +2316,21 @@ body.activity-permalink #buddypress ul.item-list li.activity-item {
 	padding:2px 7px;
 	margin:-2px 0;
 	color:#FFF;
-	background:#78c8ce;
+	background:#ffc000;
 	border-radius:20px;
 	float:right;
 }
 #buddypress div.item-list-tabs ul li.selected a,
 #buddypress div.item-list-tabs ul li.current a {
 	color: #FFF;
-	background-color:#78c8ce;
+	background-color:#ffc000;
 	background-image:url(../images/button.png);
 }
 #buddypress div.item-list-tabs ul li.selected a span,
 #buddypress div.item-list-tabs ul li.current a span,
 #buddypress div.item-list-tabs ul li a:hover span {
 	background-color: #eee;
-	color:#78c8ce;
+	color:#ffc000;
 }
 #buddypress div.item-list-tabs ul li.selected a span,
 #buddypress div.item-list-tabs ul li.current a span {
@@ -2497,7 +2497,7 @@ body.activity-permalink #buddypress ul.item-list li.activity-item {
 	margin-left: 45px;
 }
 #buddypress div#message-thread div.message-content a{
-	color:#78c8c9;
+	color:#ffc000;
 	font-weight:600;
 }
 #buddypress div#message-thread div.message-options {
@@ -2525,7 +2525,7 @@ body.activity-permalink #buddypress ul.item-list li.activity-item {
 }
 
 .activity-read-more a{
-	color:#78c8ce;
+	color:#ffc000;
 }
 #buddypress .sidebar{
 	padding-top:30px;
@@ -3098,7 +3098,7 @@ border-radius: 2px;
 
 .unitattachments h4 span{
 	float:right;
-	color:#78c8ce;
+	color:#ffc000;
 	font-weight:600;
 	max-width:48px;
 }
@@ -3120,7 +3120,7 @@ border-radius: 2px;
 	content:'DOWNLOAD';
 	float:right;
 	margin-top:5px;
-	color:#78c8ce;
+	color:#ffc000;
 	font-size:11px;
 	text-transform: uppercase;
 	font-weight:600;
@@ -3217,22 +3217,22 @@ border-radius: 2px;
 }
 .course_button.button{
 	padding: 20px 32px !important;
-	background-color: #78c8ce;
+	background-color: #ffc000;
 	width:100%;
 	text-align: center;
 }
 .widget.pricing .course_sharing .socialicons.round li > a:hover,
 .widget.pricing .course_sharing .socialicons.square li > a:hover{
 	color:#FFF;
-	background:#78c8c9;
+	background:#ffc000;
 }
 
 .unit_button.button{
 	padding: 12px 24px !important;
-	background-color: #78c8ce;
+	background-color: #ffc000;
 	width:100%;
 	text-align: center;
-	border:1px solid #78c8ce;
+	border:1px solid #ffc000;
 	margin:0;
 }
 

@@ -266,12 +266,12 @@
 }
 .mejs-mejskin .mejs-controls .mejs-time-rail .mejs-time-current {
 	width: 0;
-	background: #78c8ce;
-	background-image: -webkit-linear-gradient(-45deg, #78c8ce 25%, #368f95 25%, #368f95 50%, #78c8ce 50%, #78c8ce 75%, #368f95 75%, #368f95);
-	background-image: -moz-linear-gradient(-45deg, #78c8ce 25%, #368f95 25%, #368f95 50%, #78c8ce 50%, #78c8ce 75%, #368f95 75%, #368f95);
-	background-image: -o-linear-gradient(-45deg, #78c8ce 25%, #368f95 25%, #368f95 50%, #78c8ce 50%, #78c8ce 75%, #368f95 75%, #368f95);
-	background-image: -ms-linear-gradient(-45deg, #78c8ce 25%, #368f95 25%, #368f95 50%, #78c8ce 50%, #78c8ce 75%, #368f95 75%, #368f95);
-	background-image: linear-gradient(-45deg, #78c8ce 25%, #368f95 25%, #368f95 50%, #78c8ce 50%, #78c8ce 75%, #368f95 75%, #368f95);
+	background: #ffc000;
+	background-image: -webkit-linear-gradient(-45deg, #ffc000 25%, #368f95 25%, #368f95 50%, #ffc000 50%, #ffc000 75%, #368f95 75%, #368f95);
+	background-image: -moz-linear-gradient(-45deg, #ffc000 25%, #368f95 25%, #368f95 50%, #ffc000 50%, #ffc000 75%, #368f95 75%, #368f95);
+	background-image: -o-linear-gradient(-45deg, #ffc000 25%, #368f95 25%, #368f95 50%, #ffc000 50%, #ffc000 75%, #368f95 75%, #368f95);
+	background-image: -ms-linear-gradient(-45deg, #ffc000 25%, #368f95 25%, #368f95 50%, #ffc000 50%, #ffc000 75%, #368f95 75%, #368f95);
+	background-image: linear-gradient(-45deg, #ffc000 25%, #368f95 25%, #368f95 50%, #ffc000 50%, #ffc000 75%, #368f95 75%, #368f95);
 	-moz-background-size: 6px 6px;
 	background-size: 6px 6px;
 	-webkit-background-size: 6px 5px;
@@ -420,12 +420,12 @@
 	top: 8px;
 	width: 5px;
 	height: 50px;
-	background: #78c8ce;
-	background-image: -webkit-linear-gradient(-45deg, #78c8ce 25%, #368f95 25%, #368f95 50%, #78c8ce 50%, #78c8ce 75%, #368f95 75%, #368f95);
-	background-image: -moz-linear-gradient(-45deg, #78c8ce 25%, #368f95 25%, #368f95 50%, #78c8ce 50%, #78c8ce 75%, #368f95 75%, #368f95);
-	background-image: -o-linear-gradient(-45deg, #78c8ce 25%, #368f95 25%, #368f95 50%, #78c8ce 50%, #78c8ce 75%, #368f95 75%, #368f95);
-	background-image: -ms-linear-gradient(-45deg, #78c8ce 25%, #368f95 25%, #368f95 50%, #78c8ce 50%, #78c8ce 75%, #368f95 75%, #368f95);
-	background-image: linear-gradient(-45deg, #78c8ce 25%, #368f95 25%, #368f95 50%, #78c8ce 50%, #78c8ce 75%, #368f95 75%, #368f95);
+	background: #ffc000;
+	background-image: -webkit-linear-gradient(-45deg, #ffc000 25%, #368f95 25%, #368f95 50%, #ffc000 50%, #ffc000 75%, #368f95 75%, #368f95);
+	background-image: -moz-linear-gradient(-45deg, #ffc000 25%, #368f95 25%, #368f95 50%, #ffc000 50%, #ffc000 75%, #368f95 75%, #368f95);
+	background-image: -o-linear-gradient(-45deg, #ffc000 25%, #368f95 25%, #368f95 50%, #ffc000 50%, #ffc000 75%, #368f95 75%, #368f95);
+	background-image: -ms-linear-gradient(-45deg, #ffc000 25%, #368f95 25%, #368f95 50%, #ffc000 50%, #ffc000 75%, #368f95 75%, #368f95);
+	background-image: linear-gradient(-45deg, #ffc000 25%, #368f95 25%, #368f95 50%, #ffc000 50%, #ffc000 75%, #368f95 75%, #368f95);
 	-moz-background-size: 6px 6px;
 	background-size: 6px 6px;
 	-webkit-background-size: 6px 5px;
@@ -480,12 +480,12 @@
 	font-size: 1px;
 	border-radius: 0;
 
-	background: #78c8ce;
-	background-image: -webkit-linear-gradient(-45deg, #78c8ce 25%, #368f95 25%, #368f95 50%, #78c8ce 50%, #78c8ce 75%, #368f95 75%, #368f95);
-	background-image: -moz-linear-gradient(-45deg, #78c8ce 25%, #368f95 25%, #368f95 50%, #78c8ce 50%, #78c8ce 75%, #368f95 75%, #368f95);
-	background-image: -o-linear-gradient(-45deg, #78c8ce 25%, #368f95 25%, #368f95 50%, #78c8ce 50%, #78c8ce 75%, #368f95 75%, #368f95);
-	background-image: -ms-linear-gradient(-45deg, #78c8ce 25%, #368f95 25%, #368f95 50%, #78c8ce 50%, #78c8ce 75%, #368f95 75%, #368f95);
-	background-image: linear-gradient(-45deg, #78c8ce 25%, #368f95 25%, #368f95 50%, #78c8ce 50%, #78c8ce 75%, #368f95 75%, #368f95);
+	background: #ffc000;
+	background-image: -webkit-linear-gradient(-45deg, #ffc000 25%, #368f95 25%, #368f95 50%, #ffc000 50%, #ffc000 75%, #368f95 75%, #368f95);
+	background-image: -moz-linear-gradient(-45deg, #ffc000 25%, #368f95 25%, #368f95 50%, #ffc000 50%, #ffc000 75%, #368f95 75%, #368f95);
+	background-image: -o-linear-gradient(-45deg, #ffc000 25%, #368f95 25%, #368f95 50%, #ffc000 50%, #ffc000 75%, #368f95 75%, #368f95);
+	background-image: -ms-linear-gradient(-45deg, #ffc000 25%, #368f95 25%, #368f95 50%, #ffc000 50%, #ffc000 75%, #368f95 75%, #368f95);
+	background-image: linear-gradient(-45deg, #ffc000 25%, #368f95 25%, #368f95 50%, #ffc000 50%, #ffc000 75%, #368f95 75%, #368f95);
 	-moz-background-size: 6px 6px;
 	background-size: 6px 6px;
 	-webkit-background-size: 6px 5px;

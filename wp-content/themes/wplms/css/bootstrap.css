@@ -3206,8 +3206,8 @@ textarea.input-group-sm > .input-group-btn > .btn {
 .nav-tabs > li.active > a:hover,
 .nav-tabs > li.active > a:focus {
   color: #FFF;
-  background-color: #78c8c9;
-  border: 1px solid #78c8c9;
+  background-color: #ffc000;
+  border: 1px solid #ffc000;
   border-bottom-color: transparent;
   cursor: default;
 }

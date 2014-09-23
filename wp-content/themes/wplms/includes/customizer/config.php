@@ -39,7 +39,7 @@ $vibe_customizer = array(
                             'primary_bg' => array(
                                                 'label' => 'Theme Primary Color',
                                                 'type'  => 'color',
-                                                'default' => '#78c8c9'
+                                                'default' => '#ffc000'
                                                 ),
                             'primary_color' => array(
                                                     'label' => 'Theme Primary Text Color',

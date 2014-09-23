@@ -381,7 +381,7 @@ function vibe_course_module_overview($subtab='') {
 					minTickSize: [1, "day"]
 				},
 				yaxes: [ { min: 0, tickSize: 10, tickDecimals: 0 }, { position: "right", min: 0, tickDecimals: 2 } ],
-		   		colors: ["#78c8c9"]
+		   		colors: ["#ffc000"]
 		 	});
 
 		 	placeholder.resize();
@@ -921,7 +921,7 @@ function vibe_my_course_module_overview($subtab='') {
 					minTickSize: [1, "day"]
 				},
 				yaxes: [ { min: 0, tickSize: 10, tickDecimals: 0 }, { position: "right", min: 0, tickDecimals: 2 } ],
-		   		colors: ["#78c8c9"]
+		   		colors: ["#ffc000"]
 		 	});
 
 		 	placeholder.resize();

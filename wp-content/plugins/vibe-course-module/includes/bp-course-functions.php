@@ -1355,7 +1355,7 @@ function bp_wplms_get_theme_color(){
     if(isset($option['primary_bg']))
      return $option['primary_bg'];
   }
-  return '#78c8c9';
+  return '#ffc000';
 }
 
 function bp_wplms_get_theme_single_dark_color(){

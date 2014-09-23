@@ -271,7 +271,7 @@ h4.students_course{
 h4.students_course strong{
 	float: right;
 	padding: 5px 5px;
-	background: #78c8ce;
+	background: #ffc000;
 	color: #FFF;
 	line-height: 1;
 	border-radius: 50%;
@@ -285,7 +285,7 @@ h4.students_course strong{
 	text-align: right;
 }
 .calculate_panel strong{float:left;text-transform: uppercase;font-size:12px;margin-top:8px;}
-.calculate_panel i{font-size:24px;margin-left:10px;color:#78c8ce;}
+.calculate_panel i{font-size:24px;margin-left:10px;color:#ffc000;}
 .complete_course{
 	text-align: center;
 	display: block;
@@ -344,7 +344,7 @@ font-weight:600;color:#bbb;
 }
 
 .widget_course_list a:hover img{
-	border-color:#78c8c9;
+	border-color:#ffc000;
 }
 .widget_course_list li h6{
 	margin:0;
@@ -401,7 +401,7 @@ font-weight:600;color:#bbb;
 	text-transform: uppercase;
 	font-weight:600;
 }
-.instructor_line:hover a{color:#78c8c9;}
+.instructor_line:hover a{color:#ffc000;}
 .instructor_line h3 i{
 	font-size:16px;
 	margin-left:10px;
@@ -427,7 +427,7 @@ font-weight:600;color:#bbb;
 
 #ajaxloader{
   border-style: double;
-  border-color: #78c8c9 #efefef #efefef;
+  border-color: #ffc000 #efefef #efefef;
   }
 
 @-webkit-keyframes spin {
