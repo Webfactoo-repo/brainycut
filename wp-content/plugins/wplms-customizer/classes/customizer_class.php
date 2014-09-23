@@ -61,6 +61,10 @@ if(!class_exists('WPLMS_Customizer_Plugin_Class'))
             add_filter('vibe_thumb_rating',array($this,'vibe_thumb_rating'),1,3);
             add_filter('vibe_thumb_reviews',array($this,'vibe_thumb_reviews'),1,2);
 
+			add_action('init',array($this,'register_nonloggedin_menus'));
+			add_filter('wplms-mobile-menu',array($this,'wplms_mobile_menu'),1,1);
+			add_filter('wplms-top-menu',array($this,'wplms_top_menu'),1,1);
+			add_filter('wplms-main-menu',array($this,'wplms_main_menu'),1,1); 
            
         } // END public function __construct
 
@@ -457,6 +461,36 @@ if(!class_exists('WPLMS_Customizer_Plugin_Class'))
             // Do stuff you want on plugin deactivation
         } // END public static function deactivate
 
+		function register_nonloggedin_menus(){
+		register_nav_menus(
+		            array(
+		                'nlin-top-menu' => __( 'Non Logged In Top Menu','vibe' ),
+		                'nlin-main-menu' => __( 'Non Logged In Main Menu','vibe' ),
+		                'nlin-mobile-menu' => __( 'Non Logged In Mobile Menu','vibe' ),
+		               )
+		             );
+		}
+		
+		
+		function wplms_mobile_menu($args){
+		
+		 if(!is_user_logged_in()) // Check if user is not logged in then show the non-logged-in Menu
+		  $args['theme_location']  = 'nlin-mobile-menu';
+		
+		 return $args;
+		}
+		
+		function wplms_top_menu($args){
+		 if(!is_user_logged_in()) // Check if user is not logged in then show the non-logged-in Menu
+		  $args['theme_location']  = 'nlin-top-menu';
+		 return $args;
+		}
+		
+		function wplms_main_menu($args){
+		 if(!is_user_logged_in()) // Check if user is not logged in then show the non-logged-in Menu
+		  $args['theme_location']  = 'nlin-main-menu';
+		 return $args;
+		}  
 
     } // END class WPLMS_Customizer_Class
 } // END if(!class_exists('WPLMS_Customizer_Class'))
