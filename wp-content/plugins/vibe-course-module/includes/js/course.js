@@ -1158,6 +1158,7 @@ $( 'body' ).delegate( '#mark-complete', 'click', function(event){
                 }
                 if(typeof unit != 'undefined')
                   $('.unit_timer').trigger('finish');
+                $('#next_unit').click();
             }
     });
 });
