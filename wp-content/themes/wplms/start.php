@@ -216,7 +216,7 @@ if ( have_posts() ) : while ( have_posts() ) : the_post();
             		$finishbit=get_post_meta($course_id,$user_id,true);
             		if(isset($finishbit) && $finishbit!=''){
             			if($finishbit>0 && $finishbit < 3){
-                            echo '<input type="submit" name="review_course" class="review_course unit_button full button" value="'. __('REVIEW COURSE ','vibe').'" />';
+//                            echo '<input type="submit" name="review_course" class="review_course unit_button full button" value="'. __('REVIEW COURSE ','vibe').'" />';
             			    echo '<input type="submit" name="submit_course" class="review_course unit_button full button" value="'. __('FINISH COURSE ','vibe').'" />';
             			}
             		}
