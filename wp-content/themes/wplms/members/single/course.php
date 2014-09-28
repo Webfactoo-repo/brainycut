@@ -18,7 +18,7 @@
     <div class="container">
         <div class="row">
             <div class="pagetitle">
-            	<h1>Témakörök</h1>
+            	<h1><?php _e("Courses", "vibee");?></h1>
                 <?php the_sub_title(); ?>
             </div>
         </div>

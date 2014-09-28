@@ -1,0 +1,55 @@
+* version1.7.5
+* FEE UPDATE
+* Roll backed WPFEE
+* version1.7.4
+* UPDATED : Language Files
+* FIXED : TRanslation bugs
+* 1.7.3.1
+* FIX : New product pricing bug.
+* version1.7.3
+* FIXED : RTL Fixes
+* version1.7.2
+* FIXED : RTL Fixes
+* UPDATED : Language files
+* FIXED:  Border on text areas
+* ADDED : Support for Codestlying localization
+* FIXED : Course pricing saving membership issue
+* UPDATED : Language files
+* version1.7.1
+* ADDED : A booted border outside the required content area
+* FIXED : Course Badge Bug
+* version1.7
+* UPDATED : Language files
+* ADDED : Attachment Size in assignments
+* version 1.6.5
+* ADDED : Wrapper on front end elements
+* ADDED : Multiple assignments per unit.
+* version1.6.4
+* FIXED : Automatic reload
+* ADDED : Dynamic Quiz front end
+* FIXED : FIREFOX Issues
+* UPDATED : Language files
+* version 1.6.3
+* ADDED : Check for default Enter a course title for course
+* UPDATED : Language files
+* ADDED : ADD PACKAGE controls
+* FIXED : Changed Live to 'on'
+* version 1.6.2
+* version 1.6.2
+* Updated : Language files
+* ADDED : Linkage in front end course
+* FIXED : Save button in jquery Live edit
+* ADDED : Front End Assignment settings
+* FIXED : IE Bug for menu
+* ADDED : Front end Assignment Creation
+* UPDATED : Front end script dependency in jQuery UI
+* ADDED : Brazilian translation files
+* version 1.6.1.1
+* version 1.6
+* Fixed : Css fix for remove icon
+* FIXED : Added Unit type filter
+* FIXED : Front end firefox fix
+* 0.1
+* Init 0.1
+* Init
+* Including Repo

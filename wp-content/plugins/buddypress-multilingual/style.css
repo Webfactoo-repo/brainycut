@@ -1,0 +1,117 @@
+#bpml-debug {
+    margin: 10px;
+}
+.bpml-debug {
+    padding: 5px;
+    margin: 0 0 10px 0;
+    -moz-border-radius: 3px 3px 3px 3px;
+}
+.bpml-debug-updated {
+    border: 1px solid #FFFFE0;
+    background-color: #FFFFE0;
+    color: #000000;
+}
+.bpml-debug-error {
+    border: 1px solid #FFFFFF;
+    background-color: #cc0000;
+    color: #FFFFFF;
+}
+#bpml_google_sectional_element {
+    margin-bottom: 10px;
+    border-left: 1px dotted #cccccc;
+    border-bottom: 1px dotted #cccccc;
+    padding: 0 15px;
+}
+/*.activity-header .bpml-goog-trans-control,*/
+/*.activity-header .bpml-goog-trans-control div,*/
+.activity-header .bpml-goog-trans-section,
+.activity-header .bpml-goog-trans-section p,
+.activity-header .bpml-goog-trans-control
+/*.activity-header .bpml-goog-trans-section div */
+{
+    float: left;
+}
+.activity-inreplyto  .bpml-goog-trans-section,
+.activity-inreplyto  .bpml-goog-trans-section p,
+.activity-inreplyto  .bpml-goog-trans-control
+{
+/*    float: right;*/
+}
+.activity-inreplyto .goog-te-sectional-gadget-link-text {
+    margin-right: 5px;
+}
+.bpml-translation-original-toggle-title {
+    float: left;
+    margin-right: 5px;
+/*    font-size: 0.8em;*/
+}
+.bpml-translation-original-toggle-content {
+    margin-right: 5px;
+/*    font-size: 0.8em;*/
+}
+.bpml-translation-original-wrapper {
+    display: none;
+}
+.bpml-translation-original-wrapper-content {
+    color: #000000;
+    background-color: #fbfafa;
+    border: 1px solid #cccccc;
+    padding: 5px 15px;
+    margin: 10px 0;
+}
+.bpml-admin-form {
+    background-color: #ffffff;
+    border: 1px solid #cccccc;
+    padding: 10px 25px;
+}
+.bpml-admin-form h4 {
+    margin: 10px 0 5px 0;
+}
+#bpml-collected-activities {
+    display: none;
+}
+.bpml-collected-activities-wrapper {
+    margin-bottom: 15px;
+    border: 1px solid #eeeeee;
+    padding: 0;
+    border-collapse: collapse;
+}
+.bpml-collected-activities-wrapper td {
+    padding: 2px 10px;
+    padding-right: 10px;
+}
+.bpml-collected-activities-wrapper tr:first-child td {
+    border-bottom: 1px solid #eeeeee;
+    background-color: #eeeeee;
+}
+.bpml-collected-activities-title {
+    font-style: italic;
+}
+ul.item-list li.bpml-activity-assign-language-wrapper {
+    border-bottom: 0px;
+}
+.bpml-activity-assign-language-wrapper form {
+    margin: 0;
+}
+.bpml-profiles-field-toggle-button {
+    margin-bottom: 5px;
+}
+div.bpml-frontend-notice p {
+    background: none repeat scroll 0 0 #DFFCD9;
+    color: #1A9B00;
+    display: block;
+    font-size: 12px;
+    padding: 10px 15px;
+    -moz-border-radius: 3px 3px 3px 3px;
+    border-bottom: 1px solid #C4E9BD;
+    border-right: 1px solid #C4E9BD;
+    font-weight: normal;
+    margin-top: 6px;
+    text-decoration: none;
+}
+div.bpml-frontend-notice {
+    clear: both;
+}
+div.bpml-frontend-notice {
+    margin: 15px 0;
+}

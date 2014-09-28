@@ -1,0 +1,905 @@
+
+/*========================================================================*/
+/*   01. GENERAL STYLING
+/*========================================================================*/
+#create_content{
+	margin-top:10px;
+}
+.live-edit *:focus{
+	outline:none !important;
+}
+
+.button.hero{
+	width:100%;
+	display: inline-block;
+	text-align: center;
+	clear:both;
+	cursor: pointer;
+	margin:30px 0 0;
+	background-color:#70c989;
+	border-color:#70c989;
+	background-image:url(../images/button.png);
+	font-size:11px;
+	text-transform: uppercase;
+}
+.button.big.hero{
+	padding:20px 0;
+}
+.button.hero.disabled,
+.course_button.disabled{
+	background-color:#DDD !important;
+	border-color:#DDD !important;
+	color:#444 !important;
+}
+
+.create_course_content h3.heading{
+	margin:0;
+}
+
+#vibe_course_message,
+#course_short_description,
+#vibe_quiz_message,
+#vibe_question_explaination,
+#vibe_subtitle{
+	border: 1px dotted #EFEFEF;
+	padding: 15px;
+}
+#create_course,#create_course_help,
+#course_settings,#course_settings_help,
+#course_curriculum,#course_curriculum_help,
+#course_pricing,#course_pricing_help,
+#course_live,#course_live_help{
+	display: none;
+	opacity: 0;
+}
+
+#create_course.active,#create_course_help.active,
+#course_settings.active,#course_settings_help.active,
+#course_curriculum.active,#course_curriculum_help.active,
+#course_pricing.active,#course_pricing_help.active,
+#course_live.active,#course_live_help.active{
+	display: block;
+	opacity: 1;
+}
+
+.curriculum li h3{
+	display: inline-block;
+	font-weight: 600;
+	margin:7px 0 0;
+}
+.curriculum li .btn-group{
+	float:right;
+}
+
+.curriculum h3 > i{
+	float: left;
+	font-size: 20px;
+	margin-right: 10px;
+}
+
+.curriculum .dropdown-menu li{
+	padding:0;
+	border:none;
+}
+
+.btn-course {
+  color: #ffffff;
+  background-color: #70c989;
+  border-color: #70c989;
+}
+.btn-course .caret{
+	border-top: 4px solid #FFF;
+}
+
+h3.course_status span{float:right;}
+h3.course_status span .switch{
+	margin-top: 0px;
+}
+
+#question_settings{
+	display: none;
+}
+/*========================================================================*/
+/*   01. CREATION STEPS STYLING
+/*========================================================================*/
+#course_creation_tabs{
+	display: inline-block;
+	width:100%;
+	margin:20px 0 0;
+	background:#313b3d;
+	border-radius: 2px;
+}
+#course_creation_tabs li{
+	position: relative;
+	cursor: pointer;
+	padding:30px;
+	color:rgba(255,255,255,0.8);
+	font-size:12px;
+	text-transform: uppercase;
+	font-weight:600;
+	display: block;
+	width:100%;
+	border-bottom:1px solid rgba(255,255,255,0.1);
+}
+#course_creation_tabs li i{
+	font-size:24px;
+	float:left;
+	margin-top:2px;
+	margin-right:10px;
+	line-height: 1;
+	color:rgba(255,255,255,0.4);
+}
+#course_creation_tabs li a{
+	font-weight:600;
+	font-size:13px;
+	color:rgba(255,255,255,0.4);
+}
+
+#course_creation_tabs li a span{
+	display: block;
+	font-size:10px;
+	text-transform: uppercase;
+	font-weight:600;
+}
+#course_creation_tabs li:after{
+	content:'';
+	font-family: 'fonticon';
+	width:24px;
+	height:24px;
+	position: absolute;
+	display: block;
+	right:20px;
+	top:34px;
+	background:rgba(0,0,0,0.2);
+	border-radius:50%;
+}
+
+#course_creation_tabs li.active:after{
+	content:'\e1a8';
+	color:#78c8c9;
+	padding:4px 6px;
+}
+#course_creation_tabs li.active i,
+#course_creation_tabs li.active a{
+	color:#FFF;
+}
+
+#course_creation_tabs li.done:after{
+	content:'\e038';
+	color:#FFF;
+	background:#70c989;
+	padding:4px 6px;
+}
+
+#course_creation_tabs li.selected{
+	background-color:#78c8c9;
+	background-image: url(../images/button.png);
+}
+
+#course_creation_tabs li.selected a{
+	color:#FFF;
+	font-weight:600;
+}
+
+
+/*========================================================================*/
+/*   01. CONTENT BOX STYLING
+/*========================================================================*/
+
+.create_course_content.content{
+	margin-top:20px !important;
+}
+.create_course_content label{
+	color:#bbb;
+	margin-bottom:5px;
+	font-size:11px;
+}
+.create_course_content h1{
+	margin-top:0px;
+	line-height: 1;
+}
+#course-category{
+	list-style: none !important;
+}
+#course-category > li,
+#course-linkage > li{
+	float:left;
+	margin-right:20px;
+}
+#course-category li p,
+#course-linkage li p{
+	font-size:13px;
+	padding-top:10px;
+	margin-bottom:48px;
+	opacity: 0;
+}
+
+#course-category .chosen-container-single .chosen-single span{
+	margin-left:10px;
+}
+#course-category .chosen-container,
+#course-linkage .chosen-container{
+	float:left;
+	width:240px !important;
+}
+
+#featured_image{
+	float:left;
+	max-width: 240px;
+	margin-right:30px;
+	display: block;
+}
+
+#featured_image > #course_image{
+	max-width: 164px;
+}
+
+#featured_image > #course_image .default{
+	opacity: 0.2;
+}
+
+
+.slideout{
+	translateX:-540px;
+}
+/*========================================================================*/
+/*   01. COURSE SETTINGS
+/*========================================================================*/
+
+#course_settings{
+	display: none;
+}
+#course_settings > article > ul > li,
+#course_pricing > ul > li{
+	padding:10px 0 5px;
+	border-bottom:1px solid #EFEFEF;
+}
+#course_settings h3,
+#course_settings h5{
+	margin:0 0 10px;
+	font-weight:600;
+}
+
+.small_box,
+.mid_box,
+.large_box,
+.very_large_box{
+	width:64px;
+	border:1px solid #EFEFEF;
+	border-radius:2px;
+	margin-right:10px;
+}
+.mid_box{
+	width:160px;
+}
+.large_box{
+	width:240px;
+}
+.very_large_box{width:80%;line-height:24px;padding:6px;}
+
+#course_settings > article > ul > li img{
+	max-width:64px;
+}
+
+#course_settings h3 > span,
+#course_settings h5 > span,
+#course_pricing h3 > span,
+#course_pricing h5 > span{
+	float:right;
+}
+#course_settings h3 + ul{
+	display: none;
+}
+
+#course_settings h3 .chosen + .chosen-container{
+	margin-top:-18px;
+} 
+
+.content #course_settings ul > li > ul{
+	padding:15px 0 0;
+}
+.content #course_settings ul > li > ul > li{
+	display: inline-block;
+	width:100%;
+	padding:6px 0;
+	border-bottom:1px dotted #EFEFEF;
+}
+.content #course_settings ul > li > ul > li:last-child{
+	border:none;
+}
+/*========================================================================*/
+/*   01. COURSE CURRICULUM
+/*========================================================================*/
+
+#course_curriculum{
+	display: none;
+}
+
+#add_course_section,
+#add_question,
+#add_course_unit,
+#add_course_quiz,
+#add_option,
+#upload_zip_button{
+	margin: 20px 10px 0 0;
+	cursor:pointer;
+	padding-left:36px;
+}
+
+#add_course_section:before,
+#add_course_unit:before,
+#add_course_quiz:before,
+#add_question:before,
+#add_option:before,
+#upload_zip_button:before{
+	content: "\e05d";
+	color: rgba(255,255,255,0.3);
+	font-family: 'fonticon';
+	font-size: 16px;
+	position: absolute;
+	left: 10px;
+	top: 5px;
+}
+
+#add_course_section:hover:before,
+#add_course_unit:hover:before,
+#add_course_quiz:hover:before,
+#add_question:hover:before,
+#add_option:hover:before,
+#upload_zip_button:hover:before{
+	color:#FFF;
+}
+
+#hidden_base,
+.product_duration{
+	display: none;
+}
+
+.curriculum{
+	margin-top:20px;
+	/*overflow-y: auto; FIX FOR Curriculum not Smooth
+	overflow-x:visible !important; */
+}
+
+.curriculum li {
+padding: 8px 0;
+border-bottom: 1px solid #EFEFEF;
+display: inline-block;
+width: 100%;
+}
+.curriculum > li:before,
+.vibe_question_options > li:before {
+	content: "\e05a";
+	font-family: 'fonticon';
+	font-size: 20px;
+	line-height: 1;
+	position: relative;
+	float: left;
+	padding: 8px;
+	color: #bbb;
+}
+
+.curriculum li.new_section{
+	background:#f6f6f6;
+	border:none;
+}
+
+.curriculum input{
+	border: 1px solid #EFEFEF;
+	padding: 7px 6px 8px;
+	border-radius: 2px;
+	width:200px;
+}
+.curriculum input.section{
+	width:85%;
+}
+.section+.rem{
+float:right;
+margin:10px;
+}
+.curriculum .chosen-container{
+	width:200px !important;
+}
+
+.new_unit_actions,
+.new_quiz_actions{display: none;}
+.new_unit_actions,
+.new_quiz_actions{
+	float:right;
+	padding-left:2px !important;
+}
+
+.new_unit_actions li,
+.new_quiz_actions li{
+	float: left;
+	display: inline-block;
+	width: auto;
+	padding: 0;
+	border: none;
+	margin-left: 2px;
+}
+.new_unit_actions li input,
+.new_quiz_actions li input{
+	float:right;
+}
+.new_unit_actions li a i,
+.new_quiz_actions li a i{
+	color: #78c8c9;
+	font-size: 28px;
+}
+.curriculum .dropdown-menu{
+	min-width:100px;
+}
+
+.curriculum .dropdown-menu > li > a:hover, 
+.curriculum .dropdown-menu > li > a:focus{
+	background:#313b3d;
+}
+/*========================================================================*/
+/*   01. CONTENT BOX HELP
+/*========================================================================*/
+
+.course-create-help{
+	margin-top:20px;
+}
+
+.course-create-help li{
+	padding:15px;
+	border-radius:2px;
+	background:#FFF;
+	border:1px solid #EFEFEF;
+	font-size:13px;
+	margin-bottom:20px;
+	opacity: 0.3;
+	height:75px;
+	overflow: hidden;
+	webkit-transition: all 0.2s ease-in-out;
+	  -moz-transition: all 0.2s ease-in-out;
+	  -o-transition: all 0.2s ease-in-out;
+	  transition: all 0.2s ease-in-out;
+}
+.course-create-help li.active{
+	opacity: 1;
+	height:auto;
+	-transition: all 0.2s ease-in-out;
+	  -moz-transition: all 0.2s ease-in-out;
+	  -o-transition: all 0.2s ease-in-out;
+	  transition: all 0.2s ease-in-out;
+}
+.course-create-help li span{
+	font-size:48px;
+	font-weight:800;
+	color:#EFEFEF;
+	float:left;
+	padding:2px 25px 2px 10px;
+	line-height: 1;
+}
+
+#course_settings_help,
+#course_pricing_help,
+#course_live_help{
+	display: none;
+}
+/*========================================================================*/
+/*   01. COURSE PRICING
+/*========================================================================*/
+
+.new_product{
+	display: none;
+}
+/*========================================================================*/
+/*   01. UNIT SETTINGS
+/*========================================================================*/
+.unit_settings label,
+.assignment_settings label{
+	font-size:11px;
+	color:#bbb;
+	text-transform: uppercase;
+}
+.unit_settings > li{
+	border-bottom:1px solid #EFEFEF;
+}
+
+.unit_settings h3{
+	margin-top: 0;
+	font-weight: 600;
+}
+.unit_settings h3 > span{
+	display: block;
+	margin:5px 0;
+}
+.unit_settings .switch{
+	margin-top:0;
+	background:#FFF;
+}
+
+.unit_settings .chosen-container{
+	width:100% !important;
+}
+
+#save_unit_settings{
+	cursor:pointer;
+}
+
+
+.assignment_settings h3{
+	font-size:14px;
+	margin:0 0 10px;
+	font-weight:600;
+	text-transform: uppercase;
+}
+.assignment_settings .switch{
+	margin:0;
+	background:#FFF;
+}
+
+/*========================================================================*/
+/*   01. QUIZ
+/*========================================================================*/
+#questions{
+	list-style: none;
+	border-top:5px solid #EFEFEF;
+	margin-top:20px;
+}
+#questions > li{
+	padding:8px 0 8px 30px;
+	border-bottom:1px solid #EFEFEF;
+	position: relative;
+	display: inline-block;
+	width:100%;
+}
+#hidden li,
+#questions li{list-style: none;}
+#questions > li:before{
+	content: "\e0e0";
+	color:#EFEFEF;
+	font-family: 'fonticon';
+	font-size: 24px;
+	position: absolute;
+	left: 0;
+	top: 8px;
+}
+#questions > li >strong,
+#questions > li >span{
+	padding-top: 8px;
+	display: inline-block;
+}
+#questions > li > .btn-group{
+	float:right;
+}
+#questions li > span{
+	float:right;
+	font-size:11px;
+	text-transform: uppercase;
+	font-weight:600;
+	min-width:80px;
+}
+
+#hidden{opacity: 0;}
+#hidden li h3 >span,
+#questions li h3 >span{
+	float:right;
+}
+
+#questions h3.new_q{padding-top:10px;border-top:1px solid #EFEFEF;}
+#questions li h3.new_q{display: none;}
+.new_q .btn-course{margin:0;}
+
+#save_quiz_settings{cursor: pointer;}
+
+.settings_quiz{
+	text-align: left;
+}
+
+.settings_quiz > li{
+	padding: 8px 0;
+	border-bottom: 1px solid #EFEFEF;
+}
+.settings_quiz > li > label{
+	font-size:11px;
+}
+
+.settings_quiz .switch{
+	margin:0;
+	background:#FFF;
+}
+
+.assignment_settings > li,
+.question_settings > li{
+	clear:both;
+	padding: 6px 0;
+	border-bottom: 1px solid #EFEFEF;
+}
+.vibe_question_options{margin-top:30px;}
+.vibe_question_options li{
+	padding:5px 0;
+}
+.vibe_question_options li > span{
+	padding: 9px 15px;
+	background: #EEE;
+}
+.vibe_question_options li.selected > span{
+	background:#70c989;
+	color:#FFF;
+}
+.rem{
+	color:#fa7252;
+}
+.new_unit_actions+.rem{margin-top:10px;}
+.new_quiz_actions+.rem{margin-top:10px;}
+.question_settings h3 span,
+.assignment_settings h3 span{
+	float:right;
+}
+.vibe_question_options li span{cursor: pointer;}
+
+/*========================================================================*/
+/*   01. ASSIGNMENT SETTINGS
+/*========================================================================*/
+.new_assignment_actions > li:last-child{display: none;}
+
+.new_assignment_title{
+padding:6px;margin-bottom:10px;}
+
+/*========================================================================*/
+/*   01. FONTEND COURSE
+/*========================================================================*/
+
+.rtl #course_creation_tabs li i{
+	float:right;
+	margin-left:10px;
+}
+.rtl #course_creation_tabs li:after{right:auto;left:20px;}
+
+.rtl #course_settings h3 > span,
+.rtl #course_settings h5 > span,
+.rtl #course_pricing h3 > span,
+.rtl #course_pricing h5>span {
+float: left;
+}
+
+.rtl .curriculum li .btn-group {
+float: left;
+}
+.rtl .curriculum>li:before,
+.rtl .vibe_question_options>li:before{float:right;}
+
+.rtl #questions>li>.btn-group {
+float: left;
+}
+/*========================================================================*/
+/*   01. SWITCHES
+/*========================================================================*/
+
+.switch {
+  position: relative;
+  margin-top:-12px;
+  height: 32px;
+  width: 200px;
+  background: #f6f6f6;
+  border-radius: 30px;
+  -webkit-box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.1), 0 1px rgba(255, 255, 255, 0.05);
+  box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.1), 0 1px rgba(255, 255, 255, 0.05);
+}
+
+.switch-label {
+  position: relative;
+  z-index: 2;
+  float: left;
+  width: 100px;
+  line-height: 34px;
+  font-size: 13px;
+  color: #444;
+  text-align: center;
+  cursor: pointer;
+}
+.create_course_content label.switch-label{
+	font-size:11px;
+	text-transform: uppercase;
+}
+.switch-label:active {
+  font-weight: bold;
+  color:#FFF;
+}
+
+.switch-label-off {
+  padding-left: 2px;
+}
+
+.switch-label-on {
+  padding-right: 2px;
+}
+
+/*
+  Note: using adjacent or general sibling selectors 
+  combined with pseudo classes doesn't work in Safari 
+  5.0 and Chrome 12.
+  See this article for more info and a potential fix: 
+  http://css-tricks.com/webkit-sibling-bug/
+*/
+
+.switch-input {
+  display: none;
+}
+
+.switch-input:checked + .switch-label {
+  font-weight: bold;
+  color: #FFF;
+  text-shadow: 0 1px rgba(255, 255, 255, 0.1);
+  -webkit-transition: 0.15s ease-out;
+  -moz-transition: 0.15s ease-out;
+  -o-transition: 0.15s ease-out;
+  transition: 0.15s ease-out;
+}
+.create_course_content .switch-input:checked + .switch-label {
+	color:#FFF !important;
+}
+.switch > .switch-input:checked + .switch-label-on ~ .switch-selection {
+  left: 100px;
+}
+
+.switch-selection {
+  display: block;
+  position: absolute;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  width: 100px;
+  height: 32px;
+  border-radius: 30px;
+  background-color:#70c989;
+  border-color:#70c989;
+  background-image:url(../images/button.png);
+  -webkit-transition: left 0.15s ease-out;
+  -moz-transition: left 0.15s ease-out;
+  -o-transition: left 0.15s ease-out;
+  transition: left 0.15s ease-out;
+}
+
+.switch-blue .switch-selection {
+  background-color: #3aa2d0;
+  border-color: #3aa2d0;
+  background-image:url(../images/button.png);
+}
+
+.switch-yellow .switch-selection {
+  background-color: #c4bb61;
+  border-color: #c4bb61;
+  background-image:url(../images/button.png);
+
+}
+
+
+/*==== Datepicker ===*/
+
+  /* DatePicker Container */
+.ui-datepicker {
+    height: auto;
+    margin: 5px auto 0;
+    border: 2px solid #444;
+    font-size: 11px;
+    border-radius:2px;
+    background: #FFF
+}
+.ui-datepicker a {
+    text-decoration: none;
+}
+
+/* DatePicker Table */
+.ui-datepicker table {
+    width: 100%;
+}
+.ui-datepicker-header {
+    background: #444;
+    color: #e0e0e0;
+    font-weight: bold;
+    line-height: 30px;
+    border-width: 1px 0 0 0;
+    border-style: solid;
+    border-color: #111;
+}
+.ui-datepicker-title {
+    text-align: center;
+    font-weight:600;
+    font-size:12px;
+    color:#FFF;
+}
+.ui-datepicker-prev, .ui-datepicker-next {
+    display: inline-block;
+    width: 30px;
+    height: 30px;
+    text-align: center;
+    cursor: pointer;
+    background-repeat: no-repeat;
+    line-height: 600%;
+    overflow: hidden;
+    font-family:'dashicons';
+    position: relative;
+}
+.ui-datepicker-prev {
+    float: left;
+    background-position: center -30px;
+}
+.ui-datepicker-prev:before{
+    content: "\f341";
+    color: #FFF;
+    font-size: 20px;
+    position: absolute;
+    margin-top: -20px;
+    left: 0;
+}
+.ui-datepicker-next {
+    float: right;
+    background-position: center 0px;
+}
+.ui-datepicker-next:before{
+    content: "\f345";
+    color: #FFF;
+    font-size: 20px;
+    position: absolute;
+    margin-top: -20px;
+    right: 0;
+}
+.ui-datepicker thead {
+    background-color: #EFEFEF;
+    border-bottom: 1px solid #EFEFEF;
+}
+.ui-datepicker th {
+    text-transform: uppercase;
+    font-size: 11px;
+    text-align: center;
+    padding: 5px 0;
+    color: #444;
+}
+.ui-datepicker tbody td {
+    padding: 0;
+}
+.ui-datepicker tbody td:last-child {
+    border-right: 0px;
+}
+.ui-datepicker tbody tr {
+    border-bottom: 1px solid #EFEFEF;
+}
+.ui-datepicker tbody tr:last-child {
+    border-bottom: 0px;
+}
+.ui-datepicker td span, .ui-datepicker td a {
+    display: inline-block;
+    font-weight: bold;
+    text-align: center;
+    width: 28px;
+    height: 28px;
+    line-height: 28px;
+    color: #666666;
+}
+.ui-datepicker-calendar .ui-state-default {
+    border-right: 1px solid #EFEFEF;
+    font-weight:400;
+}
+.ui-datepicker-calendar .ui-state-hover {
+    background: #f7f7f7;
+}
+.ui-datepicker-calendar .ui-state-active {
+    background: #70C989;
+    color: #FFF;
+    font-weight:600;
+    position: relative;
+}
+
+.ui-datepicker-unselectable .ui-state-default {
+    background: #f4f4f4;
+    color: #b4b3b3;
+}
+.ui-datepicker-calendar td:first-child .ui-state-active {
+    width: 29px;
+    margin-left: 0;
+}
+.ui-datepicker-calendar td:last-child .ui-state-active {
+    width: 29px;
+    margin-right: 0;
+}
+.ui-datepicker-calendar tr:last-child .ui-state-active {
+    height: 29px;
+    margin-bottom: 0;
+}
+

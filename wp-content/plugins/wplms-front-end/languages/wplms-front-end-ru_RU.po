@@ -1,0 +1,1198 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: WPLMS Front End\n"
+"POT-Creation-Date: 2014-09-03 20:17+0530\n"
+"PO-Revision-Date: 2014-09-03 20:17+0530\n"
+"Last-Translator: VibeThemes <vibethemes@gmail.com>\n"
+"Language-Team: Olymproject <info@olymproject.org>\n"
+"Language: ru\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Poedit 1.6.7\n"
+"X-Poedit-Basepath: ..\n"
+"Plural-Forms: nplurals=3; plural=(n%10==1 && n%100!=11 ? 0 : n%10>=2 && n"
+"%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2);\n"
+"X-Poedit-KeywordsList: __;_e\n"
+"X-Poedit-SourceCharset: UTF-8\n"
+"X-Poedit-SearchPath-0: .\n"
+
+#: autoupdate/class-envato-protected-api.php:67
+msgid "Please enter your Envato Marketplace Username."
+msgstr "Пожалуйста, введите Ваш логин на сайте Envato Marketplace."
+
+#: autoupdate/class-envato-protected-api.php:71
+msgid "Please enter your Envato Marketplace API Key."
+msgstr "Пожалуйста введите Ваш API ключ с сайта Envato Marketplace."
+
+#: autoupdate/class-envato-protected-api.php:96
+msgid "The API \"set\" is a required parameter."
+msgstr "API \"установлен\" как обязательный параметр."
+
+#: autoupdate/class-envato-protected-api.php:167
+msgid "The Envato Marketplace \"item ID\" is a required parameter."
+msgstr ""
+"\"Идентификатор покупки\" на сайте Envato Marketplace установлен как "
+"обязательный параметр."
+
+#: autoupdate/class-plugin-update.php:376
+msgid "An Unexpected HTTP Error occurred during the API request."
+msgstr "Вов время API запроса возникла неизвестная ошибка HTTP. "
+
+#: autoupdate/class-plugin-update.php:376
+#: autoupdate/class-plugin-update.php:541
+msgid "Try again"
+msgstr "Попробуйте снова"
+
+#: autoupdate/class-plugin-update.php:417
+msgid "An unknown error occurred"
+msgstr "Возникла неизвестная ошибка"
+
+#: autoupdate/class-plugin-update.php:453
+msgid ""
+"The plugin has been updated, but could not be reactivated. Please reactivate "
+"it manually."
+msgstr ""
+"Плагин был обновлён, но не активирован. Пожалуйста реактивируйте его вручную."
+
+#: autoupdate/class-plugin-update.php:454
+msgid "Plugin reactivated successfully. "
+msgstr "Плагин успешно реактивирован."
+
+#: autoupdate/class-plugin-update.php:476
+msgid " Plugin Updates"
+msgstr "Обновления плагина"
+
+#: autoupdate/class-plugin-update.php:515
+msgid "Username: "
+msgstr "Логин: "
+
+#: autoupdate/class-plugin-update.php:519
+msgid "Email: "
+msgstr "Email: "
+
+#: autoupdate/class-plugin-update.php:525
+msgid "Key: "
+msgstr "Ключ: "
+
+#: autoupdate/class-plugin-update.php:531
+msgid "<p>Your plugin update is <span style=\"color:green\">active</span></p>"
+msgstr "<p>Обновление плагина <span style=\"color:green\">включено</span></p>"
+
+#: autoupdate/class-plugin-update.php:535
+msgid ""
+"<p>Your input is <span style=\"color:red\">not valid</span>, automatic "
+"updates is <span style=\"color:red\">not active</span>.</p>"
+msgstr ""
+"<p>Введённые данные <span style=\"color:red\">недействительны</span>, "
+"автоматическое обновление <span style=\"color:red\">отключено</span>.</p>"
+
+#: autoupdate/class-plugin-update.php:536
+msgid "Edit Key"
+msgstr "Изменить ключ"
+
+#: autoupdate/class-plugin-update.php:540
+msgid "<p>Unable to validate update activation.</p>"
+msgstr "<p>Невозможно подтвердить активацию обновлений.</p>"
+
+#: autoupdate/class-plugin-update.php:546
+msgid "Add Key"
+msgstr "Добавить ключ"
+
+#: autoupdate/class-plugin-update.php:632
+msgid "User name"
+msgstr "Логин"
+
+#: autoupdate/class-plugin-update.php:638
+msgid "Email"
+msgstr "Email"
+
+#: autoupdate/class-plugin-update.php:647
+msgid "Themeforest User name ( for Auto-Updates )"
+msgstr "Логин на Themeforest (для автообновлений)"
+
+#: front-end-editor/class-wp-front-end-editor.php:203
+msgid ""
+"You attempted to edit an item that doesn&#8217;t exist. Perhaps it was "
+"deleted?"
+msgstr ""
+"Вы пытаетесь редактировать элемент, который не существует. Возможно, он был "
+"удален."
+
+#: front-end-editor/class-wp-front-end-editor.php:223
+#: front-end-editor/class-wp-front-end-editor.php:862
+msgid "You are not allowed to edit this item."
+msgstr "У Вас нет прав для редактирования элемента."
+
+#: front-end-editor/class-wp-front-end-editor.php:296
+#: front-end-editor/class-wp-front-end-editor.php:371
+#: front-end-editor/class-wp-front-end-editor.php:1328
+#: front-end-editor/class-wp-front-end-editor.php:1369
+#: front-end-editor/class-wp-front-end-editor.php:1527
+msgid "Cancel"
+msgstr "Отмена"
+
+#: front-end-editor/class-wp-front-end-editor.php:300
+msgid "LOCKED"
+msgstr "ЗАБЛОКИРОВАН"
+
+#: front-end-editor/class-wp-front-end-editor.php:370
+#: front-end-editor/class-wp-front-end-editor.php:1327
+#: front-end-editor/class-wp-front-end-editor.php:1368
+msgid "OK"
+msgstr "OK"
+
+#: front-end-editor/class-wp-front-end-editor.php:372
+msgid "Publish on:"
+msgstr "Опубликовать: "
+
+#: front-end-editor/class-wp-front-end-editor.php:373
+msgid "Schedule for:"
+msgstr "Запланировать на: "
+
+#: front-end-editor/class-wp-front-end-editor.php:374
+msgid "Published on:"
+msgstr "Опубликовано: "
+
+#: front-end-editor/class-wp-front-end-editor.php:375
+#, php-format
+msgid "%1$s %2$s, %3$s @ %4$s : %5$s"
+msgstr "%1$s %2$s, %3$s @ %4$s : %5$s"
+
+#: front-end-editor/class-wp-front-end-editor.php:376
+msgid "Show more comments"
+msgstr "Другие комментарии"
+
+#: front-end-editor/class-wp-front-end-editor.php:377
+msgid "No more comments found."
+msgstr "Комментариев больше нет."
+
+#: front-end-editor/class-wp-front-end-editor.php:378
+#: front-end-editor/class-wp-front-end-editor.php:583
+#: front-end-editor/class-wp-front-end-editor.php:1153
+#: includes/class_wplms_front_end.php:859
+msgid "Publish"
+msgstr "Опубликовать"
+
+#: front-end-editor/class-wp-front-end-editor.php:379
+msgid "Schedule"
+msgstr "График"
+
+#: front-end-editor/class-wp-front-end-editor.php:380
+#: front-end-editor/class-wp-front-end-editor.php:510
+#: front-end-editor/class-wp-front-end-editor.php:595
+msgid "Update"
+msgstr "Обновить"
+
+#: front-end-editor/class-wp-front-end-editor.php:381
+msgid "Save as Pending"
+msgstr "В процессе доработки"
+
+#: front-end-editor/class-wp-front-end-editor.php:382
+msgid "Save Draft"
+msgstr "Сохранить как черновик"
+
+#: front-end-editor/class-wp-front-end-editor.php:383
+#: front-end-editor/class-wp-front-end-editor.php:1337
+#: front-end-editor/class-wp-front-end-editor.php:1365
+msgid "Private"
+msgstr "Закрытое "
+
+#: front-end-editor/class-wp-front-end-editor.php:384
+#: front-end-editor/class-wp-front-end-editor.php:1346
+#: front-end-editor/class-wp-front-end-editor.php:1359
+msgid "Public"
+msgstr "Открытое "
+
+#: front-end-editor/class-wp-front-end-editor.php:385
+#: front-end-editor/class-wp-front-end-editor.php:1343
+msgid "Public, Sticky"
+msgstr "Открытое, поднятое"
+
+#: front-end-editor/class-wp-front-end-editor.php:386
+msgid "Password Protected"
+msgstr "Защищён паролем"
+
+#: front-end-editor/class-wp-front-end-editor.php:387
+#: front-end-editor/class-wp-front-end-editor.php:1290
+#: front-end-editor/class-wp-front-end-editor.php:1316
+msgid "Privately Published"
+msgstr "Скрытая публикация"
+
+#: front-end-editor/class-wp-front-end-editor.php:388
+#: front-end-editor/class-wp-front-end-editor.php:1293
+#: front-end-editor/class-wp-front-end-editor.php:1314
+msgid "Published"
+msgstr "Опубликовано"
+
+#: front-end-editor/class-wp-front-end-editor.php:499
+msgid "Saving Draft&#8230;"
+msgstr "Сохраняю черновик&#8230;"
+
+#: front-end-editor/class-wp-front-end-editor.php:500
+msgid "The changes you made will be lost if you navigate away from this page."
+msgstr "Изменения будут утеряны, если Вы покините данную страницу. "
+
+#: front-end-editor/class-wp-front-end-editor.php:509
+#: front-end-editor/class-wp-front-end-editor.php:1482
+msgid "Insert/edit link"
+msgstr "Вставить/изменить ссылку"
+
+#: front-end-editor/class-wp-front-end-editor.php:511
+msgid "Add Link"
+msgstr "Добавить ссылку"
+
+#: front-end-editor/class-wp-front-end-editor.php:512
+msgid "(no title)"
+msgstr "(нет названия)"
+
+#: front-end-editor/class-wp-front-end-editor.php:513
+msgid "No matches found."
+msgstr "Совпадения не найдены."
+
+#: front-end-editor/class-wp-front-end-editor.php:583
+msgid "Publishing&hellip;"
+msgstr "Публикую&hellip;"
+
+#: front-end-editor/class-wp-front-end-editor.php:595 wplms-front-end.php:78
+msgid "Save"
+msgstr "Сохранить"
+
+#: front-end-editor/class-wp-front-end-editor.php:595
+msgid "Saving&hellip;"
+msgstr "Сохраняю&hellip;"
+
+#: front-end-editor/class-wp-front-end-editor.php:595
+msgid "Updating&hellip;"
+msgstr "Обновляю&hellip;"
+
+#: front-end-editor/class-wp-front-end-editor.php:1083
+#, php-format
+msgid "Post updated. <a href=\"%s\">View post</a>"
+msgstr "Запись обновлена. <a href=\"%s\">Просмотреть</a>"
+
+#: front-end-editor/class-wp-front-end-editor.php:1084
+#: front-end-editor/class-wp-front-end-editor.php:1100
+msgid "Custom field updated."
+msgstr "Особое поле обновлено."
+
+#: front-end-editor/class-wp-front-end-editor.php:1085
+#: front-end-editor/class-wp-front-end-editor.php:1101
+msgid "Custom field deleted."
+msgstr "Особое поле удалено. "
+
+#: front-end-editor/class-wp-front-end-editor.php:1086
+msgid "Post updated."
+msgstr "Запись обновлена."
+
+#: front-end-editor/class-wp-front-end-editor.php:1088
+#, php-format
+msgid "Post restored to revision from %s"
+msgstr "Запись от %s восстановлена для пересмотра "
+
+#: front-end-editor/class-wp-front-end-editor.php:1089
+#, php-format
+msgid "Post published. <a href=\"%s\">View post</a>"
+msgstr "Запись опубликована. <a href=\"%s\">Просмотр</a>"
+
+#: front-end-editor/class-wp-front-end-editor.php:1090
+msgid "Post saved."
+msgstr "Запись сохранена. "
+
+#: front-end-editor/class-wp-front-end-editor.php:1091
+#, php-format
+msgid "Post submitted. <a target=\"_blank\" href=\"%s\">Preview post</a>"
+msgstr "Запись отправлена. <a target=\"_blank\" href=\"%s\">Просмотр</a>"
+
+#: front-end-editor/class-wp-front-end-editor.php:1092
+#, php-format
+msgid ""
+"Post scheduled for: <strong>%1$s</strong>. <a target=\"_blank\" href=\"%2$s"
+"\">Preview post</a>"
+msgstr ""
+"Запись запланирована на: <strong>%1$s</strong>. <a target=\"_blank\" href="
+"\"%2$s\">Просмотр</a>"
+
+#: front-end-editor/class-wp-front-end-editor.php:1094
+#: front-end-editor/class-wp-front-end-editor.php:1107
+#: front-end-editor/class-wp-front-end-editor.php:1375
+msgid "M j, Y @ G:i"
+msgstr "M j, Y @ G:i"
+
+#: front-end-editor/class-wp-front-end-editor.php:1095
+#, php-format
+msgid "Post draft updated. <a target=\"_blank\" href=\"%s\">Preview post</a>"
+msgstr ""
+"Черновик записи обновлён. <a target=\"_blank\" href=\"%s\">Просмотр</a>"
+
+#: front-end-editor/class-wp-front-end-editor.php:1099
+#, php-format
+msgid "Page updated. <a href=\"%s\">View page</a>"
+msgstr "Страница обновлена. <a href=\"%s\">Просмотр</a>"
+
+#: front-end-editor/class-wp-front-end-editor.php:1102
+msgid "Page updated."
+msgstr "Страница обновлена."
+
+#: front-end-editor/class-wp-front-end-editor.php:1103
+#, php-format
+msgid "Page restored to revision from %s"
+msgstr "Страница от %s восстановлена для пересмотра"
+
+#: front-end-editor/class-wp-front-end-editor.php:1104
+#, php-format
+msgid "Page published. <a href=\"%s\">View page</a>"
+msgstr "Страница опубликована. <a href=\"%s\">Просмотр</a>"
+
+#: front-end-editor/class-wp-front-end-editor.php:1105
+msgid "Page saved."
+msgstr "Страница сохранена. "
+
+#: front-end-editor/class-wp-front-end-editor.php:1106
+#, php-format
+msgid "Page submitted. <a target=\"_blank\" href=\"%s\">Preview page</a>"
+msgstr "Страница отправлена. <a target=\"_blank\" href=\"%s\">Просмотр</a>"
+
+#: front-end-editor/class-wp-front-end-editor.php:1107
+#, php-format
+msgid ""
+"Page scheduled for: <strong>%1$s</strong>. <a target=\"_blank\" href=\"%2$s"
+"\">Preview page</a>"
+msgstr ""
+"Страница запланирована на: <strong>%1$s</strong>. <a target=\"_blank\" href="
+"\"%2$s\">Просмотр</a>"
+
+#: front-end-editor/class-wp-front-end-editor.php:1108
+#, php-format
+msgid "Page draft updated. <a target=\"_blank\" href=\"%s\">Preview page</a>"
+msgstr ""
+"Черновик страницы обновлён. <a target=\"_blank\" href=\"%s\">Просмотр</a>"
+
+#: front-end-editor/class-wp-front-end-editor.php:1110
+msgid "Media attachment updated."
+msgstr "Медиа приложение обновлено. "
+
+#: front-end-editor/class-wp-front-end-editor.php:1141
+#, php-format
+msgid ""
+"There is an autosave of this post that is more recent than the version "
+"below. <a href=\"%s\">View the autosave</a>"
+msgstr ""
+"Автосохранения для данной записи нет, т.к. она более свежая, чем версия "
+"ниже. <a href=\"%s\">Показать автосохранение</a>"
+
+#: front-end-editor/class-wp-front-end-editor.php:1164
+msgid "Revisions"
+msgstr "Редакции "
+
+#: front-end-editor/class-wp-front-end-editor.php:1202
+msgid "Page Attributes"
+msgstr "Свойства страницы "
+
+#: front-end-editor/class-wp-front-end-editor.php:1202
+msgid "Attributes"
+msgstr "Свойства "
+
+#: front-end-editor/class-wp-front-end-editor.php:1206
+msgid "Excerpt"
+msgstr "Цитата "
+
+#: front-end-editor/class-wp-front-end-editor.php:1210
+msgid "Send Trackbacks"
+msgstr "Отправлять обратные ссылки"
+
+#: front-end-editor/class-wp-front-end-editor.php:1214
+msgid "Custom Fields"
+msgstr "Особые поля "
+
+#: front-end-editor/class-wp-front-end-editor.php:1218
+msgid "Discussion"
+msgstr "Обсуждение "
+
+#: front-end-editor/class-wp-front-end-editor.php:1285
+msgid "Status:"
+msgstr "Статус: "
+
+#: front-end-editor/class-wp-front-end-editor.php:1296
+#: front-end-editor/class-wp-front-end-editor.php:1318
+msgid "Scheduled"
+msgstr "Запланирован"
+
+#: front-end-editor/class-wp-front-end-editor.php:1299
+#: front-end-editor/class-wp-front-end-editor.php:1320
+msgid "Pending Review"
+msgstr "Ожидает проверки"
+
+#: front-end-editor/class-wp-front-end-editor.php:1303
+#: front-end-editor/class-wp-front-end-editor.php:1322
+#: front-end-editor/class-wp-front-end-editor.php:1324
+msgid "Draft"
+msgstr "Черновик"
+
+#: front-end-editor/class-wp-front-end-editor.php:1309
+#: front-end-editor/class-wp-front-end-editor.php:1351
+#: front-end-editor/class-wp-front-end-editor.php:1398
+msgid "Edit"
+msgstr "Изменить"
+
+#: front-end-editor/class-wp-front-end-editor.php:1333
+msgid "Visibility:"
+msgstr "Видимость: "
+
+#: front-end-editor/class-wp-front-end-editor.php:1340
+#: front-end-editor/class-wp-front-end-editor.php:1363
+msgid "Password protected"
+msgstr "Защита паролем"
+
+#: front-end-editor/class-wp-front-end-editor.php:1361
+msgid "Stick this post to the front page"
+msgstr "Прикрепить запись на титульную страницу"
+
+#: front-end-editor/class-wp-front-end-editor.php:1364
+msgid "Password:"
+msgstr "Пароль: "
+
+#: front-end-editor/class-wp-front-end-editor.php:1378
+#, php-format
+msgid "Scheduled for: <b>%1$s</b>"
+msgstr "Запланировано на: <b>%1$s</b>"
+
+#: front-end-editor/class-wp-front-end-editor.php:1380
+#, php-format
+msgid "Published on: <b>%1$s</b>"
+msgstr "Опубликовано: <b>%1$s</b>"
+
+#: front-end-editor/class-wp-front-end-editor.php:1382
+#: front-end-editor/class-wp-front-end-editor.php:1390
+msgid "Publish <b>immediately</b>"
+msgstr "Опубликовать <b>немедленно</b>"
+
+#: front-end-editor/class-wp-front-end-editor.php:1384
+#, php-format
+msgid "Schedule for: <b>%1$s</b>"
+msgstr "Запланировать на: <b>%1$s</b>"
+
+#: front-end-editor/class-wp-front-end-editor.php:1386
+#, php-format
+msgid "Publish on: <b>%1$s</b>"
+msgstr "Опубликовать: <b>%1$s</b>"
+
+#: front-end-editor/class-wp-front-end-editor.php:1414
+msgid "Slug"
+msgstr "След "
+
+#: front-end-editor/class-wp-front-end-editor.php:1427
+msgid "Author"
+msgstr "Автор"
+
+#: front-end-editor/class-wp-front-end-editor.php:1447
+#: front-end-editor/class-wp-front-end-editor.php:1492
+msgid "Title"
+msgstr "Заголовок"
+
+#: front-end-editor/class-wp-front-end-editor.php:1487
+msgid "Enter the destination URL"
+msgstr "Введите URL удалённого элемента "
+
+#: front-end-editor/class-wp-front-end-editor.php:1489
+msgid "URL"
+msgstr "URL"
+
+#: front-end-editor/class-wp-front-end-editor.php:1495
+msgid "Open link in a new window/tab"
+msgstr "Открыть ссылку в новом окне/закладке"
+
+#: front-end-editor/class-wp-front-end-editor.php:1498
+msgid "Or link to existing content"
+msgstr "Или привязать к существующей записи"
+
+#: front-end-editor/class-wp-front-end-editor.php:1502
+msgid "Search"
+msgstr "Поиск"
+
+#: front-end-editor/class-wp-front-end-editor.php:1514
+msgid "No search term specified. Showing recent items."
+msgstr "Запрос на поиск отсутствует. Показываю последние элементы."
+
+#: front-end-editor/meta-modal-template.php:9
+msgid ""
+"<strong>Connection lost.</strong> Saving has been disabled until you&#8217;"
+"re reconnected."
+msgstr ""
+"<strong>Связь прервана.</strong> Для сохранения пожалуйста подключитесь "
+"снова."
+
+#: front-end-editor/meta-modal-template.php:10
+msgid "We&#8217;re backing up this post in your browser, just in case."
+msgstr "Создаю резервную копию этой записи в браузере, на всякий случай. "
+
+#: includes/class_wplms_front_end.php:61
+msgid "Create a Course"
+msgstr "Создать курс"
+
+#: includes/class_wplms_front_end.php:68
+msgid "COURSE CREATION ONLY ALLOWED FOR INSTRUCTORS & ADMINISTRATORS"
+msgstr "СОЗДАНИЕ КУРСОВ ДОСТУПНО ТОЛЬКО ИНСТРУКТОРАМ И АДМИНИСТРАТОРАМ"
+
+#: includes/class_wplms_front_end.php:78
+msgid "Unable to edit Course, please contact Site Administrator"
+msgstr "Невозможно редактировать курс, пожалуйста свяжитесь с администратором"
+
+#: includes/class_wplms_front_end.php:81
+msgid "Incorrect Action, please contact Site Administrator"
+msgstr "Недопустимое действие, пожалуйста свяжитесь с администратором."
+
+#: includes/class_wplms_front_end.php:109
+msgid "Edit Course"
+msgstr "Редактировать курс"
+
+#: includes/class_wplms_front_end.php:139
+#: includes/class_wplms_front_end.php:211
+#: includes/class_wplms_front_end.php:304
+#: includes/class_wplms_front_end.php:425
+#: includes/class_wplms_front_end.php:482
+#: includes/class_wplms_front_end.php:537
+#: includes/class_wplms_front_end.php:565
+#: includes/class_wplms_front_end.php:600
+#: includes/class_wplms_front_end.php:729
+#: includes/class_wplms_front_end.php:939
+#: includes/class_wplms_front_end.php:1236
+#: includes/class_wplms_front_end.php:1290
+#: includes/class_wplms_front_end.php:1349
+#: includes/class_wplms_front_end.php:1478
+#: includes/class_wplms_front_end.php:1504
+#: includes/class_wplms_front_end.php:1693
+msgid "Security check Failed. Contact Administrator."
+msgstr "Ошибка системы безопасности. Свяжитесь с администратором."
+
+#: includes/class_wplms_front_end.php:163
+#: includes/class_wplms_front_end.php:248
+msgid "Unable to create a new Course Category. Contact Admin !"
+msgstr ""
+"Невозможно создать новую рубрику для курса. Свяжитесь с администратором ! "
+
+#: includes/class_wplms_front_end.php:192
+#: includes/class_wplms_front_end.php:276
+msgid "Unable to create course, contact admin !"
+msgstr "Невозможно создать курс, свяжитесь с администратором ! "
+
+#: includes/class_wplms_front_end.php:217
+#: includes/class_wplms_front_end.php:309
+#: includes/class_wplms_front_end.php:430
+#: includes/class_wplms_front_end.php:487
+#: includes/class_wplms_front_end.php:542
+#: includes/class_wplms_front_end.php:570
+#: includes/class_wplms_front_end.php:605
+#: includes/class_wplms_front_end.php:734
+#: includes/class_wplms_front_end.php:944
+msgid "Invalid Course id, please edit a course"
+msgstr "Недопустимый идентификатор курса, пожалуйста, отредактируйте"
+
+#: includes/class_wplms_front_end.php:223
+#: includes/class_wplms_front_end.php:315
+#: includes/class_wplms_front_end.php:436
+#: includes/class_wplms_front_end.php:493
+#: includes/class_wplms_front_end.php:576
+#: includes/class_wplms_front_end.php:611
+#: includes/class_wplms_front_end.php:740
+msgid "Invalid Course Instructor"
+msgstr "Недопустимый инструктор курса "
+
+#: includes/class_wplms_front_end.php:327
+msgid "Unable to save course setting : "
+msgstr "Невозможно сохранить настройки курса : "
+
+#: includes/class_wplms_front_end.php:420
+msgid "Can not have a blank Unit "
+msgstr "Модуль не может быть пустым "
+
+#: includes/class_wplms_front_end.php:455
+msgid "Edit Unit"
+msgstr "Изменить модуль"
+
+#: includes/class_wplms_front_end.php:456
+#: includes/class_wplms_front_end.php:511
+#: includes/class_wplms_front_end.php:860
+#: includes/class_wplms_front_end.php:1063
+#: includes/class_wplms_front_end.php:1101
+#: includes/class_wplms_front_end.php:1254
+msgid "Remove"
+msgstr "Удалить"
+
+#: includes/class_wplms_front_end.php:457
+#: includes/class_wplms_front_end.php:512
+#: includes/class_wplms_front_end.php:1064
+#: includes/class_wplms_front_end.php:1255
+msgid "Delete"
+msgstr "Удалить"
+
+#: includes/class_wplms_front_end.php:477
+msgid "Can not have a Blank Quiz"
+msgstr "В тесте должны быть вопросы"
+
+#: includes/class_wplms_front_end.php:510
+msgid "Edit Quiz"
+msgstr "Изменить тест"
+
+#: includes/class_wplms_front_end.php:532
+msgid "Can not have delete"
+msgstr "Невозможно удалить "
+
+#: includes/class_wplms_front_end.php:548
+#: includes/class_wplms_front_end.php:1355
+msgid "Instructor can not delete this unit/quiz"
+msgstr "Инструктор не может удалить этот модуль/тест"
+
+#: includes/class_wplms_front_end.php:556
+#: includes/class_wplms_front_end.php:1363
+msgid "Unable to delete"
+msgstr "Невозможно удалить"
+
+#: includes/class_wplms_front_end.php:590
+msgid "Unable to save curriculum, please contact site admin"
+msgstr ""
+"Невозможно сохранить план обучения, пожалуйста, свяжитесь с администратором "
+
+#: includes/class_wplms_front_end.php:669
+msgid "Invalid Product specs"
+msgstr "Недопустимая спецификация товара "
+
+#: includes/class_wplms_front_end.php:719
+msgid "Unable to create product and pricing for course"
+msgstr "Невозможно создать продукт и ценник для курса "
+
+#: includes/class_wplms_front_end.php:752
+msgid "Course successfully updated."
+msgstr "Курс успешно обновлён."
+
+#: includes/class_wplms_front_end.php:753
+msgid "View Course"
+msgstr "Просмотр курса"
+
+#: includes/class_wplms_front_end.php:755
+msgid "Unable to update Course, contact Site admin"
+msgstr "Невозможно обновить курс, свяжитесь с администратором "
+
+#: includes/class_wplms_front_end.php:796
+msgid "Unit Settings"
+msgstr "Настройки модуля"
+
+#: includes/class_wplms_front_end.php:799
+msgid "Unit Type"
+msgstr "Тип модуля"
+
+#: includes/class_wplms_front_end.php:800
+msgid "Select Unit Type"
+msgstr "Выбрать тип модуля"
+
+#: includes/class_wplms_front_end.php:804
+msgid "Video"
+msgstr "Видео"
+
+#: includes/class_wplms_front_end.php:805
+msgid "Audio"
+msgstr "Аудио"
+
+#: includes/class_wplms_front_end.php:806
+msgid "Podcast"
+msgstr "Запись"
+
+#: includes/class_wplms_front_end.php:807
+msgid "General"
+msgstr "Общий"
+
+#: includes/class_wplms_front_end.php:815
+msgid "Free Unit"
+msgstr "Открытый модуль"
+
+#: includes/class_wplms_front_end.php:816
+msgid "Make Unit Free"
+msgstr "Сделать модуль открытым"
+
+#: includes/class_wplms_front_end.php:819
+#: includes/class_wplms_front_end.php:1574
+msgid "NO"
+msgstr "НЕТ"
+
+#: includes/class_wplms_front_end.php:821
+#: includes/class_wplms_front_end.php:1572
+msgid "YES"
+msgstr "ДА"
+
+#: includes/class_wplms_front_end.php:827
+msgid "Unit Duration"
+msgstr "Продолжительность модуля"
+
+#: includes/class_wplms_front_end.php:828
+msgid "Duration of Unit"
+msgstr "Продолжительность модуля"
+
+#: includes/class_wplms_front_end.php:834
+msgid "Unit assignments"
+msgstr "Задание к модулю"
+
+#: includes/class_wplms_front_end.php:835
+msgid "Connect Assignments"
+msgstr "Подключить задание"
+
+#: includes/class_wplms_front_end.php:837
+#: includes/class_wplms_front_end.php:874
+#: includes/class_wplms_front_end.php:1076
+#: includes/class_wplms_front_end.php:1582
+msgid "None"
+msgstr "Отсутсвует"
+
+#: includes/class_wplms_front_end.php:852
+msgid "Edit Assignment"
+msgstr "Редактировать задание"
+
+#: includes/class_wplms_front_end.php:854
+msgid "ADD NEW ASSIGNMENT"
+msgstr "ДОБАВИТЬ НОВОЕ ЗАДАНИЕ"
+
+#: includes/class_wplms_front_end.php:855
+msgid "Add the Assignment title"
+msgstr "Добавить название к заданию"
+
+#: includes/class_wplms_front_end.php:871
+msgid "Unit Forum"
+msgstr "Форум модуля"
+
+#: includes/class_wplms_front_end.php:872
+msgid "Connect a Forum"
+msgstr "Подключить форум"
+
+#: includes/class_wplms_front_end.php:875
+msgid "Add new child forum in Course forum"
+msgstr "Новый дочерний форум к форуму курса "
+
+#: includes/class_wplms_front_end.php:876
+msgid "Add new forum"
+msgstr "Новый форум"
+
+#: includes/class_wplms_front_end.php:896
+msgid "SAVE UNIT SETTINGS"
+msgstr "СОХРАНИТЬ НАСТРОЙКИ МОДУЛЯ"
+
+#: includes/class_wplms_front_end.php:949
+msgid "Invalid Unit id, please edit a course"
+msgstr "Неверный id модуля, пожалуйста, измените курс"
+
+#: includes/class_wplms_front_end.php:955
+msgid "Invalid Unit Instructor"
+msgstr "Неверный инструктор модуля"
+
+#: includes/class_wplms_front_end.php:1018
+msgid "Settings Saved"
+msgstr "Настройки сохранены"
+
+#: includes/class_wplms_front_end.php:1020
+msgid "Unable to save settings"
+msgstr "Невозможно сохранить настройки"
+
+#: includes/class_wplms_front_end.php:1044
+msgid "Manage Quiz Questions"
+msgstr "Управление вопросами теста"
+
+#: includes/class_wplms_front_end.php:1047
+msgid "ADD QUESTION"
+msgstr "ДОБАВИТЬ ВОПРОС"
+
+#: includes/class_wplms_front_end.php:1058
+#: includes/class_wplms_front_end.php:1249
+msgid "Question "
+msgstr "Вопрос"
+
+#: includes/class_wplms_front_end.php:1062
+#: includes/class_wplms_front_end.php:1253
+msgid "Edit Question"
+msgstr "Изменить вопрос"
+
+#: includes/class_wplms_front_end.php:1067
+#: includes/class_wplms_front_end.php:1258
+msgid "MARKS : "
+msgstr "ОЦЕНКИ : "
+
+#: includes/class_wplms_front_end.php:1077
+msgid "ADD A NEW QUESTION"
+msgstr "ДОБАВИТЬ НОВЫЙ ВОПРОС"
+
+#: includes/class_wplms_front_end.php:1093
+msgid "Marks : "
+msgstr "Оценки : "
+
+#: includes/class_wplms_front_end.php:1095
+msgid "Question Title : "
+msgstr "Название вопроса : "
+
+#: includes/class_wplms_front_end.php:1096
+msgid "Enter title for reference"
+msgstr "Введите заголовок для справки "
+
+#: includes/class_wplms_front_end.php:1100
+msgid "Publish Question"
+msgstr "Опубликовать вопрос"
+
+#: includes/class_wplms_front_end.php:1107
+#: includes/class_wplms_front_end.php:1227
+msgid "SAVE QUIZ SETTINGS"
+msgstr "СОХРАНИТЬ НАСТРОКИ ТЕСТА"
+
+#: includes/class_wplms_front_end.php:1130
+msgid "Enter a Quiz sub-title"
+msgstr "Введите подзаголовок теста "
+
+#: includes/class_wplms_front_end.php:1140
+msgid "Enter a Quiz Completion message"
+msgstr "Текст сообщение об окончании теста"
+
+#: includes/class_wplms_front_end.php:1146
+msgid "Quiz Settings"
+msgstr "Настройки теста"
+
+#: includes/class_wplms_front_end.php:1150
+msgid "QUIZ SUB-TITLE"
+msgstr "ПОЗАГОЛОВОК ТЕСТА"
+
+#: includes/class_wplms_front_end.php:1155
+msgid "CONNECTED COURSE"
+msgstr "ПОДКЛЮЧЕННЫЕ КУРСЫ"
+
+#: includes/class_wplms_front_end.php:1170
+msgid "QUIZ DURATION"
+msgstr "ПРОДОЛЖИТЕЛЬНОСТЬ ТЕСТА"
+
+#: includes/class_wplms_front_end.php:1173
+msgid "QUIZ EVALUATION"
+msgstr "ОЦЕНКА ТЕСТА"
+
+#: includes/class_wplms_front_end.php:1176
+msgid "AUTO"
+msgstr "АВТОМАТИЧЕСКАЯ"
+
+#: includes/class_wplms_front_end.php:1178
+msgid "MANUAL"
+msgstr "ВРУЧНУЮ"
+
+#: includes/class_wplms_front_end.php:1182
+msgid "QUIZ QUESTIONS TYPE"
+msgstr "ТИП ВОПРОСОВ ТЕСТА"
+
+#: includes/class_wplms_front_end.php:1185
+msgid "DYNAMIC"
+msgstr "ДИНАМИЧЕСКИЙ"
+
+#: includes/class_wplms_front_end.php:1187
+msgid "STATIC"
+msgstr "СТАТИЧЕСКИЙ"
+
+#: includes/class_wplms_front_end.php:1191
+msgid "SELECT QUESTION TAGS"
+msgstr "ЯРЛЫКИ ДЛЯ ВОПРОСА "
+
+#: includes/class_wplms_front_end.php:1202
+msgid "NUMER OF QUESTIONS"
+msgstr "КОЛИЧЕСТВО ВОПРОСОВ"
+
+#: includes/class_wplms_front_end.php:1205
+msgid "MARKS PER QUESTION"
+msgstr "ОЦЕНКИ ЗА ВОПРОСЫ"
+
+#: includes/class_wplms_front_end.php:1208
+msgid "QUIZ RETAKES"
+msgstr "ПОВТОРНОЕ ПРОХОЖДЕНИЕ"
+
+#: includes/class_wplms_front_end.php:1209
+msgid " Retakes"
+msgstr "Повторения"
+
+#: includes/class_wplms_front_end.php:1211
+msgid "QUESTIONS ORDER"
+msgstr "ПОРЯДОК ВОПРОСОВ"
+
+#: includes/class_wplms_front_end.php:1214
+msgid "RANDOM"
+msgstr "ПРОИЗВОЛЬНЫЙ"
+
+#: includes/class_wplms_front_end.php:1216
+msgid "SEQUENTIAL"
+msgstr "ПОСЛЕДОВАТЕЛЬНЫЙ"
+
+#: includes/class_wplms_front_end.php:1220
+msgid "QUIZ COMPLETION MESSAGE"
+msgstr "СООБЩЕНИЕ ОБ ОКОНЧАНИИ ТЕСТА"
+
+#: includes/class_wplms_front_end.php:1242
+#, fuzzy, php-format
+msgid "Add Content for %s"
+msgstr "Добавить комментарий для "
+
+#: includes/class_wplms_front_end.php:1295
+msgid "Invalid Quiz"
+msgstr "Недопустимый тест "
+
+#: includes/class_wplms_front_end.php:1321
+msgid "Quiz Settings saved"
+msgstr "Настройки теста сохранены"
+
+#: includes/class_wplms_front_end.php:1344
+msgid "Can not delete"
+msgstr "Невозможно удалить"
+
+#: includes/class_wplms_front_end.php:1396
+msgid "QUESTION SETTINGS"
+msgstr "НАСТРОЙКИ ВОПРОСА"
+
+#: includes/class_wplms_front_end.php:1398
+msgid "Question Type"
+msgstr "Тип вопроса "
+
+#: includes/class_wplms_front_end.php:1409
+msgid "ADD OPTION"
+msgstr "ДОБАВИТЬ"
+
+#: includes/class_wplms_front_end.php:1419
+msgid "Click to select as Correct answer"
+msgstr "Нажмите для выбора правильного ответа "
+
+#: includes/class_wplms_front_end.php:1428
+msgid "Correct Answer"
+msgstr "Верный ответ "
+
+#: includes/class_wplms_front_end.php:1429
+msgid "Answer Hint"
+msgstr "Подсказка к ответу"
+
+#: includes/class_wplms_front_end.php:1430
+msgid "Answer Explaination"
+msgstr "Пояснение ответа "
+
+#: includes/class_wplms_front_end.php:1438
+msgid "SAVE QUESTION SETTINGS"
+msgstr "СОХРАНИТЬ НАСТРОЙКИ ОТВЕТОВ "
+
+#: includes/class_wplms_front_end.php:1473
+msgid "Unable to save, incorrect question"
+msgstr "Невозможно сохранить, неверный вопрос "
+
+#: includes/class_wplms_front_end.php:1497
+msgid "Question settings successfully saved"
+msgstr "Настройки вопроса успешно сохранены "
+
+#: includes/class_wplms_front_end.php:1511
+msgid "Unable to save, incorrect unit"
+msgstr "Невозможно сохранить, неверный модуль "
+
+#: includes/class_wplms_front_end.php:1551
+msgid "ASSIGNMENT SETTINGS"
+msgstr "НАСТРОЙКИ ЗАДАНИЯ"
+
+#: includes/class_wplms_front_end.php:1555
+msgid "ASSIGNMENT SUB-TITLE"
+msgstr "ПОДЗАГОЛОВОК ЗАДАНИЯ"
+
+#: includes/class_wplms_front_end.php:1561
+msgid "ASSIGNMENT MARKS"
+msgstr "ОЦЕНКИ ЗАДАНИЯ"
+
+#: includes/class_wplms_front_end.php:1562
+msgid "Assignment Maximum Marks"
+msgstr "Максимальный бал за задание"
+
+#: includes/class_wplms_front_end.php:1562
+msgid "MARKS"
+msgstr "ОЦЕНКИ"
+
+#: includes/class_wplms_front_end.php:1565
+msgid "ASSIGNMENT DURATION"
+msgstr "ПРОДОЛЖИТЕЛЬНОСТЬ ЗАДАНИЯ"
+
+#: includes/class_wplms_front_end.php:1566
+msgid "Enter Assignment Duration"
+msgstr "Введите продолжительность задания"
+
+#: includes/class_wplms_front_end.php:1568
+msgid "ASSIGNMENT EVALUATION"
+msgstr "ОЦЕНКА ВЫПОЛНЕНИЯ ЗАДАНИЯ"
+
+#: includes/class_wplms_front_end.php:1569
+msgid "Include in Course Evaluation"
+msgstr "Включить в оценку прохождения курса"
+
+#: includes/class_wplms_front_end.php:1579
+msgid "ASSIGNMENT COURSE"
+msgstr "ЗАДАННЫЙ КУРС"
+
+#: includes/class_wplms_front_end.php:1580
+msgid "Select Assignment Course"
+msgstr "Выбрать курс в качестве задания "
+
+#: includes/class_wplms_front_end.php:1597
+msgid "ASSIGNMENT SUBMISISON TYPE"
+msgstr "ТИП ОТПРАВКИ ЗАДАНИЯ"
+
+#: includes/class_wplms_front_end.php:1599
+msgid "UPLOAD"
+msgstr "ЗАГРУЗИТЬ"
+
+#: includes/class_wplms_front_end.php:1600
+msgid "TEXTAREA"
+msgstr "ТЕКСТОВЫЙ БЛОК"
+
+#: includes/class_wplms_front_end.php:1603
+msgid "ATTACHMENT TYPE"
+msgstr "ПРИЛОЖЕНИЕ"
+
+#: includes/class_wplms_front_end.php:1648
+msgid "Attachment Size"
+msgstr "Размер приложения "
+
+#: includes/class_wplms_front_end.php:1649
+msgid "Maximum attachment size"
+msgstr "Максимальный объем приложения "
+
+#: includes/class_wplms_front_end.php:1649
+msgid " MBs"
+msgstr "Мб"
+
+#: includes/class_wplms_front_end.php:1652
+msgid "SAVE SETTINGS"
+msgstr "СОХРАНИТЬ НАСТРОЙКИ"
+
+#: includes/class_wplms_front_end.php:1698
+msgid "Invalid details"
+msgstr "Неверные детали"
+
+#: includes/class_wplms_front_end.php:1704
+msgid "Invalid Assignment author"
+msgstr "Неверное присвоение автора"
+
+#: includes/class_wplms_front_end.php:1713
+msgid "SETTINGS SAVED"
+msgstr "НАСТРОЙКИ СОХРАНЕНЫ"
+
+#: includes/class_wplms_front_end.php:1724
+msgid "ADD PACKAGE"
+msgstr "ДОБАВИТЬ АРХИВ "
+
+#: includes/class_wplms_front_end.php:1728
+msgid "Seconds"
+msgstr "Секунд "
+
+#: includes/class_wplms_front_end.php:1729
+msgid "Minutes"
+msgstr "Минут"
+
+#: includes/class_wplms_front_end.php:1730
+msgid "Hours"
+msgstr "Часов"
+
+#: includes/class_wplms_front_end.php:1731
+msgid "Days"
+msgstr "Дней"
+
+#: includes/class_wplms_front_end.php:1732
+msgid "Weeks"
+msgstr "Недель"
+
+#: includes/class_wplms_front_end.php:1733
+msgid "Months"
+msgstr "Месяцев"
+
+#: includes/class_wplms_front_end.php:1734
+msgid "Years"
+msgstr "Лет"
+
+#: wplms-front-end.php:60
+msgid "Please change the course title"
+msgstr "Пожалуйста измените название курса"
+
+#: wplms-front-end.php:61
+msgid "This will create a new course in the site, do you want to continue ?"
+msgstr "Создание нового курса на сайте, хотите продолжить? "
+
+#: wplms-front-end.php:62
+msgid "Yes, create a new course"
+msgstr "Да, создать новый курс"
+
+#: wplms-front-end.php:63
+msgid ""
+"This will overwrite the previous course settings, do you want to continue ?"
+msgstr "Замена старых настроек для курсов, хотите продолжить ? "
+
+#: wplms-front-end.php:64
+msgid "Save course"
+msgstr "Сохранить курс"
+
+#: wplms-front-end.php:65
+msgid "This will create a new unit in the site, do you want to continue ?"
+msgstr "Создание нового модуля на сайте, хотите продолжить ? "
+
+#: wplms-front-end.php:66
+msgid "Yes, create a new unit"
+msgstr "Да, создать новый модуль"
+
+#: wplms-front-end.php:67
+msgid ""
+"This will overwrite the existing unit settings, do you want to continue ?"
+msgstr "Замена старых настроек для модулей, хотите продолжить ? "
+
+#: wplms-front-end.php:68
+msgid "Yes, save unit settings"
+msgstr "Да, сохранить настройки модуля"
+
+#: wplms-front-end.php:69
+msgid "This will create a new question in the site, do you want to continue ?"
+msgstr "Создание нового вопроса на сайте, хотите продолжить ? "
+
+#: wplms-front-end.php:70
+msgid "Yes, create a new question"
+msgstr "Да, создать новый вопрос"
+
+#: wplms-front-end.php:71
+msgid "This will create a new quiz in the site, do you want to continue ?"
+msgstr "Создание нового теста на сайте, хотите продолжить ? "
+
+#: wplms-front-end.php:72
+msgid "Yes, create a new quiz"
+msgstr "Да, создать новый тест"
+
+#: wplms-front-end.php:73
+msgid ""
+"This will overwrite the existing quiz settings, do you want to continue ?"
+msgstr "Замена старых настроек для тестов, хотите продолжить ? "
+
+#: wplms-front-end.php:74
+msgid "Yes, save quiz settings"
+msgstr "Да, сохранить настройки теста"
+
+#: wplms-front-end.php:75
+msgid ""
+"This will delete the unit/quiz from your site, do you want to continue ?"
+msgstr "Удаление модуля/теста с сайта, хотите продолжить ? "
+
+#: wplms-front-end.php:76
+msgid "Continue"
+msgstr "Продолжить"
+
+#: wplms-front-end.php:77
+msgid "This will overwrite the previous settings, do you want to continue ?"
+msgstr "Это действие заменяет существующие настройки, хотите продолжить ? "
+
+#: wplms-front-end.php:79
+msgid ""
+"This will create a new assignment in the site, do you want to continue ?"
+msgstr "Создание нового задания на сайте, хотите продолжить ? "
+
+#: wplms-front-end.php:80
+msgid "Yes, create a new assignment"
+msgstr "Да, создать новое задание"
+
+#~ msgid " Minutes"
+#~ msgstr "Минут"
+
+#~ msgid "Add a New Assignment"
+#~ msgstr "Добавить новое задание"
+
+#~ msgid "DAYS"
+#~ msgstr "ДНЕЙ"
