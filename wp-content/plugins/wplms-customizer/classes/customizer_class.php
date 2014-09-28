@@ -65,6 +65,8 @@ if(!class_exists('WPLMS_Customizer_Plugin_Class'))
 			add_filter('wplms-mobile-menu',array($this,'wplms_mobile_menu'),1,1);
 			add_filter('wplms-top-menu',array($this,'wplms_top_menu'),1,1);
 			add_filter('wplms-main-menu',array($this,'wplms_main_menu'),1,1); 
+			
+			add_action('bp_member_options_nav',array($this,'wplms_bp_member_options_nav'));  
            
         } // END public function __construct
 
@@ -490,7 +492,11 @@ if(!class_exists('WPLMS_Customizer_Plugin_Class'))
 		 if(!is_user_logged_in()) // Check if user is not logged in then show the non-logged-in Menu
 		  $args['theme_location']  = 'nlin-main-menu';
 		 return $args;
-		}  
+		}
+		
+		function wplms_bp_member_options_nav(){
+            echo '<li id="settings-custom-li"><a id="custom-settings" href="/members/krisz/course/course-stats/">Eredmenyek</a></li>';
+        }   
 
     } // END class WPLMS_Customizer_Class
 } // END if(!class_exists('WPLMS_Customizer_Class'))
