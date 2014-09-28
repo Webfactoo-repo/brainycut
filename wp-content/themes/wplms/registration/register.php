@@ -308,6 +308,10 @@
 			jQuery( 'input#signup_with_blog' ).click( function() {
 				jQuery('div#blog-details').fadeOut().toggle();
 			});
+			
+			jQuery( '#signup_username' ).change( function() {
+				jQuery( '#field_1' ).attr("value",jQuery( '#signup_username' ).val());
+			})
 		});
 	</script>
 
