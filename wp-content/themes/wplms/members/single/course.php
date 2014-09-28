@@ -11,6 +11,7 @@
 <?php
 	get_header( 'buddypress' ); 
 	global $bp;
+//	print_r($bp);
 	do_action( 'bp_before_member_course_content' ); 
 ?>
 
@@ -84,7 +85,6 @@
 					<div id="course-dir-list" class="course dir-list">
 
 						<?php  
-					
 					include('course-loop.php' );  ?>
 
 					</div><!-- #courses-dir-list -->
