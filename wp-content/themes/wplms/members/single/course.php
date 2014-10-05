@@ -41,7 +41,11 @@
 					<?php do_action( 'bp_before_directory_course_content' ); ?>
 
 					<?php do_action( 'template_notices' ); ?>
-
+<script>
+	jQuery(document).ready(function(){
+		jQuery("#course-all a").click();
+	});
+</script>
 					<div class="item-list-tabs" role="navigation">
 						<ul>
 							<li class="selected" id="course-all"><a href="<?php echo trailingslashit( bp_get_root_domain() . '/' . bp_get_course_root_slug() ); ?>"><?php printf( __( 'All Courses <span>%s</span>', 'vibe' ), bp_course_get_total_course_count( ) ); ?></a></li>
