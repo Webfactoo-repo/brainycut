@@ -115,7 +115,7 @@ if ( bp_course_has_items( $args ) ) : ?>
 
 	<ul id="course-list" class="item-list" role="main">
 
-	<?php while ( bp_course_has_items() ) : bp_course_the_item(); ?>
+	<?php while ( bp_course_has_items() ) : bp_course_the_item();?>
 
 		<li>
 			<div class="item-avatar">
@@ -124,11 +124,14 @@ if ( bp_course_has_items( $args ) ) : ?>
 			</div>
 
 			<div class="item">
-				<div class="item-title"><?php bp_course_title(); ?></div>
+				<div class="item-title"><?php bp_course_title(); ?>
+					<div style="float: right;width:100px;"><?php the_course_button(get_the_ID()); ?></div>
+				</div>
+				
 				<div class="item-meta"><?php bp_course_meta(); ?></div>
 				<div class="item-desc"><?php bp_course_desc(); ?></div>
 				<div class="item-credits">
-					<?php bp_course_credits(); ?>
+					<?php krisz_course_credits(); ?>
 				</div>
 				<div class="item-instructor">
 					<?php bp_course_instructor(); ?>

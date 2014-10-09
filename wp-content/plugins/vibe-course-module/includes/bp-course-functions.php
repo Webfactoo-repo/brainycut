@@ -149,7 +149,7 @@ function the_course_button($id=NULL){
    $free_course= get_post_meta($course_id,'vibe_course_free',true);
 
   if(!is_user_logged_in() && vibe_validate($free_course)){
-    echo apply_filters('wplms_course_non_loggedin_user','<a href="'.get_permalink($course_id).'?error=login" class="course_button button full">'.__('TAKE THIS COURSE','vibe').'</a>'); 
+    echo apply_filters('wplms_course_non_loggedin_user','<a href="'.get_permalink($course_id).'?error=login" class="course_button button full">'.__('TAKE THIS COURSE','vibee').'</a>'); 
     return;
   }
 
@@ -191,25 +191,25 @@ function the_course_button($id=NULL){
 
              echo '<form action="'.$take_course_page.'" method="post">';
              if(!$course_user){ // COURSE NOT STARTED
-                  echo '<input type="submit" class="'.((isset($id) && $id )?'':'course_button full ').'button" value="'.__('START COURSE','vibe').'">'; 
+                  echo '<input type="submit" class="'.((isset($id) && $id )?'':'course_button full ').'button" value="'.__('START COURSE','vibee').'">'; 
                   wp_nonce_field('start_course'.$user_id,'start_course');
              }else{  // COURSE STARTED
               
                 switch($course_user){
                   case 1:
-                    echo '<input type="submit" class="'.((isset($id) && $id )?'':'course_button full ').'button" value="'.__('CONTINUE COURSE','vibe').'">';
+                    echo '<input type="submit" class="'.((isset($id) && $id )?'':'course_button full ').'button" value="'.__('CONTINUE COURSE','vibee').'">';
                     wp_nonce_field('continue_course'.$user_id,'continue_course');
                   break;
                   case 2:
-                    echo '<a href="#" class="full button">'.__('COURSE UNDER EVALUATION','vibe').'</a>';
+                    echo '<a href="#" class="full button">'.__('COURSE UNDER EVALUATION','vibee').'</a>';
                   break;
                   default:
                     $finished_course_access = vibe_get_option('finished_course_access');
                     if(isset($finished_course_access) && $finished_course_access){
-                      echo '<input type="submit" class="'.((isset($id) && $id )?'':'course_button full ').'button" value="'.__('FINISHED COURSE','vibe').'">';
+                      echo '<input type="submit" class="'.((isset($id) && $id )?'':'course_button full ').'button" value="'.__('FINISHED COURSE','vibee').'">';
                       wp_nonce_field('continue_course'.$user_id,'continue_course');
                     }else{
-                      echo '<a href="#" class="full button">'.__('COURSE FINISHED','vibe').'</a>';
+                      echo '<a href="#" class="full button">'.__('COURSE FINISHED','vibee').'</a>';
                     }
                   break;
                 }
@@ -262,7 +262,7 @@ function get_the_course_details($args=NULL){
     $levels=get_the_term_list( $course_id, 'level', '', ', ', '' );
 
   $course_details = array(
-    'price' => '<li><i class="icon-wallet-money"></i> <h5 class="credits">'.bp_course_get_course_credits('course_id='.$course_id).'</h5></li>',
+    'price' => (krisz_course_get_course_credits('course_id='.$course_id) == ''? '': '<li><i class="icon-wallet-money"></i> <h5 class="credits">'.krisz_course_get_course_credits('course_id='.$course_id).'</h5></li>'),
     'precourse'=>((isset($precourse) && $precourse!='')?'<li><i class="icon-clipboard-1"></i> '.__('* REQUIRES','vibe').' <a href="'.get_permalink($precourse).'">'.get_the_title($precourse).'</a></li>':''),
     'time' => apply_filters('wplms_course_details_time','<li><i class="icon-clock"></i>'.get_the_course_time('course_id='.$course_id).'</li>'),
     'level' => ((isset($level) && $level && strlen($levels)>5)?'<li><i class="icon-bars"></i> '.$levels.'</li>':''),

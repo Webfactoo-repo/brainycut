@@ -583,6 +583,87 @@ if(!function_exists('bp_course_get_course_credits')){
 		return apply_filters('wplms_course_credits',$credits,$id);
 	}
 }
+
+
+function krisz_course_credits($args=NULL) {
+	echo krisz_course_get_course_credits();
+}
+	
+/* 
+ *
+ * We'll assemble the title out of the available information. This way, we can insert
+ * fancy stuff link links, and secondary avatars.
+ *
+ * @package BuddyPress_Skeleton_Component
+ * @since 1.6
+ */
+if(!function_exists('krisz_course_get_course_credits')){
+	function krisz_course_get_course_credits($args=NULL) {
+		$defaults=array(
+			'id' =>get_the_ID(),
+			'currency'=>'CREDITS'
+			);
+		$r = wp_parse_args( $args, $defaults );
+			extract( $r, EXTR_SKIP );
+
+		$private =0;
+		$user_id=get_current_user_id();
+
+		$credits='<strong itemprop="price">';
+			
+		$free_course = get_post_meta($id,'vibe_course_free',true);
+
+		if(vibe_validate($free_course)){
+			$credits .= apply_filters('wplms_free_course_price',__('FREE','vibe'));
+		}else{
+			
+			$product_id = get_post_meta($id,'vibe_product',true);
+			if(isset($product_id) && $product_id !='' && function_exists('get_product')){ //WooCommerce installed
+				$product = get_product( $product_id );
+				if(is_object($product))
+				$credits = $product->get_price_html();
+				//$credits = apply_filters('wplms_course_credits',$credits,$id);
+			}else
+				$private=1;
+		
+	    if ( in_array( 'paid-memberships-pro/paid-memberships-pro.php', apply_filters( 'active_plugins', get_option( 'active_plugins' ) ) ) ) {
+
+			$membership_ids = vibe_sanitize(get_post_meta($id,'vibe_pmpro_membership',false));
+			
+			if(isset($membership_ids) && is_Array($membership_ids) && count($membership_ids) && function_exists('pmpro_getAllLevels')){
+
+			$membership_id = min($membership_ids);
+
+			$levels=pmpro_getAllLevels();
+				foreach($levels as $level){
+					if($level->id == $membership_id){
+						$private=0;
+						$credits .= $level->name.'<span class="subs">'.__('MEMBERSHIP','vibe').'</span>';
+						break;
+					}else
+						$private=1;
+				}
+		    }
+		  }
+
+		  if($private){
+				$credits =get_post_meta($id,'vibe_course_credits',true);
+				if(isset($credits) && $credits !='' ){
+					$private=0;
+					$credits .= '<span class="subs">'.$credits.'</span>';
+				}
+			}
+
+		  if(isset($private) && $private){
+		  	$credits .= apply_filters('wplms_private_course_label',__('PRIVATE','vibe'));
+		  }
+		  	
+		} // End Else
+
+		$credits .='</strong>';
+		return apply_filters('krisz_wplms_course_credits',$credits,$id);
+	}
+}
 /**
  * Is this page part of the course component?
  *

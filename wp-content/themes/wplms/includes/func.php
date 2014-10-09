@@ -693,6 +693,36 @@ function wplms_show_course_student_status($credits,$course_id){
   }
   return $credits;
 }
+
+
+add_filter('krisz_wplms_course_credits','krisz_wplms_show_course_student_status',10,2);
+function krisz_wplms_show_course_student_status($credits,$course_id){
+  if(is_user_logged_in()){
+    $user_id=get_current_user_id();
+    $check=get_user_meta($user_id,$course_id,true);
+    if(isset($check) && $check){
+      if($check < time()){
+        return '';
+      }
+      $check_course=get_post_meta($course_id,$user_id,true);
+      switch($check_course){
+        case 0:
+        $credits ='';
+        break;
+        case 1:
+        $credits ='';
+        break;
+        case 2:
+        $credits ='';
+        break;
+        default:
+        $credits ='';
+        break;
+      }
+    }
+  }
+  return $credits;
+}
 /*==== End Show Values ====*/
 
 
@@ -1297,7 +1327,7 @@ function wplms_force_change_status_function($order_status,$order_id){
     $user_id=$order->user_id;
     foreach($items as $item){
       $product_id = $item['product_id'];
-      $is_virtual = get_post_meta( $product_id, '￼_virtual', true );
+      $is_virtual = get_post_meta( $product_id, '_virtual', true );
       if( $is_virtual == 'yes' ){
         $flag=1;
         break;
