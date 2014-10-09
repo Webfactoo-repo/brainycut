@@ -44,6 +44,7 @@ if ( have_posts() ) : while ( have_posts() ) : the_post();
                 <div class="unit_title">
                 	<?php
             		if(isset($unit_id)){
+            		echo get_the_title($course_id) . "<br />";
                 		the_unit_tags($unit_id);
                         if(is_numeric($unit_id))
                 		  the_unit_instructor($unit_id);
