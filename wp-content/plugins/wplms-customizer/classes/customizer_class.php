@@ -495,7 +495,8 @@ if(!class_exists('WPLMS_Customizer_Plugin_Class'))
 		}
 		
 		function wplms_bp_member_options_nav(){
-            echo '<li id="settings-custom-li"><a id="custom-settings" href="/members/krisz/course/course-stats/">Eredmenyek</a></li>';
+			$current_user = wp_get_current_user();
+            echo '<li id="settings-custom-li"><a id="custom-settings" href="' . icl_get_home_url() . 'members/' . $current_user->user_login . '/course/course-results/">Eredmenyek</a></li>';
         }   
 
     } // END class WPLMS_Customizer_Class
