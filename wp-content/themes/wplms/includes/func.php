@@ -870,7 +870,7 @@ function vibe_breadcrumbs() {
     /* === END OF OPTIONS === */  
   
     global $post;  
-    $homeLink = home_url();  
+    $homeLink = icl_get_home_url();  
     $linkBefore = '<li>';  
     $linkAfter = '</li>';  
     $linkAttr = ' rel="v:url" property="v:title"';  
@@ -944,13 +944,12 @@ function vibe_breadcrumbs() {
                   $post_type =  get_post_type_object(get_post_type()); 
 
                   $course_category = get_the_term_list($post->ID, 'course-cat', '', '', '' );  
-
                   $slug = $post_type->rewrite;  
                   if(isset($course_category)){
-
+				  $current_user = wp_get_current_user();
                   $course_category = str_replace('<a', $linkBefore . '<a' . $linkAttr, $course_category);  
                   $course_category = str_replace('</a>', '</a>' . $linkAfter, $course_category);  
-                  printf($link, $homeLink . '/' . $slug['slug'] . '/', __('Course','vibe'));  //$post_type->labels->singular_name
+                  printf($link, $homeLink . "members/" . $current_user->user_login . '/course/', __('Course','vibe')."");  //$post_type->labels->singular_name
                   echo apply_filters('wplms_breadcrumbs_course_category',$course_category);
 
                   }
