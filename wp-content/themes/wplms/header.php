@@ -22,7 +22,7 @@ wp_head();
     <div class="pagesidebar">
         <div class="sidebarcontent">    
             <h2 id="sidelogo">
-            <a href="<?php echo vibe_site_url(); ?>"><img src="<?php  echo apply_filters('wplms_logo_url',VIBE_URL.'/images/logo.png'); ?>" alt="<?php echo get_bloginfo('name'); ?>" /></a>
+            <a href="<?php echo icl_get_home_url() ?>"><img src="<?php  echo apply_filters('wplms_logo_url',VIBE_URL.'/images/logo.png'); ?>" alt="<?php echo get_bloginfo('name'); ?>" /></a>
             </h2>
             <?php
                 $args = apply_filters('wplms-mobile-menu',array(
@@ -45,7 +45,7 @@ wp_head();
             <div class="container">
                 <div class="row">
                     <div class="col-md-4 col-sm-3">
-                       <a href="<?php echo vibe_site_url(); ?>" class="homeicon"><img src="<?php  echo apply_filters('wplms_logo_url',VIBE_URL.'/images/logo.png'); ?>" alt="<?php echo get_bloginfo('name'); ?>" /></a> 
+                       <a href="<?php echo icl_get_home_url(); ?>" class="homeicon"><img src="<?php  echo apply_filters('wplms_logo_url',VIBE_URL.'/images/logo.png'); ?>" alt="<?php echo get_bloginfo('name'); ?>" /></a> 
                     </div>
                     <div class="col-md-8 col-sm-9">
                     <?php
@@ -99,7 +99,7 @@ wp_head();
                             }
                         ?>
                         
-                            <a href="<?php echo vibe_site_url(); ?>"><img src="<?php  echo apply_filters('wplms_logo_url',VIBE_URL.'/images/logo.png'); ?>" alt="<?php echo get_bloginfo('name'); ?>" /></a>
+                            <a href="<?php echo icl_get_home_url(); ?>"><img src="<?php  echo apply_filters('wplms_logo_url',VIBE_URL.'/images/logo.png'); ?>" alt="<?php echo get_bloginfo('name'); ?>" /></a>
                         <?php
                             if(is_home()){
                                 echo '</h1>';
