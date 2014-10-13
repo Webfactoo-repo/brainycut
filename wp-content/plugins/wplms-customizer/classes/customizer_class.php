@@ -66,7 +66,9 @@ if(!class_exists('WPLMS_Customizer_Plugin_Class'))
 			add_filter('wplms-top-menu',array($this,'wplms_top_menu'),1,1);
 			add_filter('wplms-main-menu',array($this,'wplms_main_menu'),1,1); 
 			
-			add_action('bp_member_options_nav',array($this,'wplms_bp_member_options_nav'));  
+			add_action('bp_member_options_nav',array($this,'wplms_bp_member_options_nav'));
+			
+			add_action('badgeos_wplms_start_course',array($this,'reset_course_expire'),10,1); 
            
         } // END public function __construct
 
@@ -498,6 +500,18 @@ if(!class_exists('WPLMS_Customizer_Plugin_Class'))
 			$current_user = wp_get_current_user();
             echo '<li id="settings-custom-li"><a id="custom-settings" href="' . icl_get_home_url() . 'members/' . $current_user->user_login . '/course/course-results/">Eredmenyek</a></li>';
         }   
+
+function reset_course_expire($course_id){
+if(!is_user_logged_in())
+return;
+
+ $user_id = get_current_user_id();  
+ $duration=get_post_meta($course_id,'vibe_duration',true);
+      $course_duration_parameter = apply_filters('vibe_course_duration_parameter',86400);
+      $expiry = time()+$course_duration_parameter*$duration;
+ update_user_meta($user_id,$course_id,$expiry);
+}  
+
 
     } // END class WPLMS_Customizer_Class
 } // END if(!class_exists('WPLMS_Customizer_Class'))
