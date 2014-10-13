@@ -15,6 +15,27 @@
 	do_action( 'bp_before_member_course_content' ); 
 ?>
 
+<?php
+if ( bp_is_current_action( BP_COURSE_RESULTS_SLUG ) ) {
+
+?>
+<section id="memberstitle">
+    <div class="container">
+        <div class="row">
+            <div class="pagetitle">
+            	<h1><?php _e("Results", "vibee");?></h1>
+                <?php the_sub_title(); ?>
+            </div>
+        </div>
+    </div>
+</section>
+<section id="content">
+	<div id="buddypress">
+    <div class="container">
+<?php
+	locate_template( array( 'members/single/course/results.php' ), true );
+}else{
+?>
 <section id="memberstitle">
     <div class="container">
         <div class="row">
@@ -28,11 +49,10 @@
 <section id="content">
 	<div id="buddypress">
     <div class="container">
-
 	<?php do_action( 'bp_before_directory_course_page' ); ?>
 
 		<div class="padder">
-
+	
 		<?php do_action( 'bp_before_directory_course' ); ?>
 		<div class="row">
 			<div class="col-md-12 col-sm-8">
@@ -120,9 +140,9 @@
 
 
 
-
-
-
+<?php
+}
+?>
 
 
 
