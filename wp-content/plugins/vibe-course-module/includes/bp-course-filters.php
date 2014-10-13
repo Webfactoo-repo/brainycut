@@ -136,6 +136,9 @@ if ( bp_course_has_items( $args ) ) : ?>
 				<div class="item-instructor">
 					<?php bp_course_instructor(); ?>
 				</div>
+				<div class="item-time">
+					<?php the_course_time(); ?>
+				</div>
 				<div class="item-action"><?php bp_course_action(); ?></div>
 				<?php do_action( 'bp_directory_course_item' ); ?>
 
