@@ -69,6 +69,8 @@ if(!class_exists('WPLMS_Customizer_Plugin_Class'))
 			add_action('bp_member_options_nav',array($this,'wplms_bp_member_options_nav'));
 			
 			add_action('badgeos_wplms_start_course',array($this,'reset_course_expire'),10,1); 
+			
+			add_filter('comment_flood_filter',array($this,'wplms_comment_flood_filter'),20,1);
            
         } // END public function __construct
 
@@ -512,6 +514,11 @@ return;
  update_user_meta($user_id,$course_id,$expiry);
 }  
 
+function wplms_comment_flood_filter($false){
+            return false;
+        } 
+        
+        
 
     } // END class WPLMS_Customizer_Class
 } // END if(!class_exists('WPLMS_Customizer_Class'))
