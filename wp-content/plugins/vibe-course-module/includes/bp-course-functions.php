@@ -663,7 +663,6 @@ if(!function_exists('the_quiz_timeline')){
             if(isset($id) && $ques == $id){
               $class="active";
             }
-            echo '<li id="ques'.$ques.'" class="'.$class.'"><span></span> <a href="#" data-quiz="'.$quiz_id.'" data-qid="'.$ques.'" class="'.(is_user_logged_in()?'quiz_question':'').'">'.__('QUESTION','vibe').' '.($i+1).'<span>'.$marks[$i].'</span></a></li>';
             echo '<li id="ques'.$ques.'" class="'.$class.'"><span></span> <a href="#" data-quiz="'.$quiz_id.'" data-qid="'.$ques.'" class="'.(is_user_logged_in()?'quiz_question':'').'">'.__('QUESTION','vibe').' '.($i+1).'</a></li>';
           }
         }   
