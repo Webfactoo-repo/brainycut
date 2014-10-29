@@ -1152,7 +1152,7 @@ function unit_traverse(){
                   if(!empty($quiz_status))
                       echo '<a href="#" data-unit="'.$units[$next].'" class="unit '.$unit_class.'">'.__('Proceed to Quiz','vibe').'</a>';
                   else          
-                      echo '<a href="'.get_permalink($units[$next]).'" class=" unit_button">'.__('Proceed to Quiz','vibe').'</a>';
+                      echo '<a href="'.get_permalink($units[$next]).'" class=" unit_button proctoquiz">'.__('Proceed to Quiz','vibe').'</a>';
                 }else  
                   echo '<a href="#" id="next_unit" '.(($hide_unit)?'':'data-unit="'.$units[$next].'"').' class="unit '.$unit_class.'">'.__('Next Unit','vibe').'</a>';
               }
