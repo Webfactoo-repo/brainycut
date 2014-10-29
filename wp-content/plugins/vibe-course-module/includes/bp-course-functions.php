@@ -186,7 +186,6 @@ function the_course_button($id=NULL){
          if($coursetaken > time()){  // COURSE ACTIVE
 
             $course_user=get_post_meta($course_id,$user_id,true); // Validates that a user has taken this course
-            
             if((isset($course_user) && $course_user !='') || (isset($free_course) && $free_course && $free_course !='H' && is_user_logged_in())){ // COURSE PURCHASED SECONDARY VALIDATION
 
              echo '<form action="'.$take_course_page.'" method="post">';
@@ -234,7 +233,7 @@ function the_course_button($id=NULL){
       $pid=apply_filters('wplms_course_product_id',$pid,$course_id);
       $extra ='';
       if(isset($pid) && $pid){
-        echo '<a href="'.get_permalink($pid).'" class="'.((isset($id) && $id )?'':'course_button full ').'button">'.__('TAKE THIS COURSE','vibe').apply_filters('wplms_course_button_extra',$extra,$course_id).'</a>'; 
+        echo '<a href="'.get_permalink($pid).'" class="'.((isset($id) && $id )?'':'course_button full ').'button buybutton">'.__('TAKE THIS COURSE','vibe').apply_filters('wplms_course_button_extra',$extra,$course_id).'</a>'; 
       }else{
         echo '<a href="'.apply_filters('wplms_private_course_button','#').'" class="'.((isset($id) && $id )?'':'course_button full ').'button">'. apply_filters('wplms_private_course_button_label',__('PRIVATE COURSE','vibe')).'</a>'; 
       }
