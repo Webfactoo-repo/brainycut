@@ -173,7 +173,7 @@ if ( have_posts() ) : while ( have_posts() ) : the_post();
                             if(!empty($quiz_status))
                                 echo '<a href="#" data-unit="'.$units[$next].'" class="unit unit_button">'.__('Proceed to Quiz','vibe').'</a>';
                             else          
-                                echo '<a href="'.get_permalink($units[$next]).'" class=" unit_button">'.__('Proceed to Quiz','vibe').'</a>';
+                                echo '<a href="'.get_permalink($units[$next]).'" class=" unit_button proctoquiz">'.__('Proceed to Quiz','vibe').'</a>';
                         }else{
                             if(get_post_type($units[$k]) == 'quiz'){ //Display Next unit link because current unit is a quiz on Page reload
                                 echo '<a href="#" id="next_unit" data-unit="'.$units[$next].'" class="unit unit_button">'.__('Next Unit','vibe').'</a>';
