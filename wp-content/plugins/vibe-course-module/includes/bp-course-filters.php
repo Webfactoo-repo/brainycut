@@ -125,7 +125,6 @@ if ( bp_course_has_items( $args ) ) : ?>
 
 			<div class="item">
 				<div class="item-title"><?php bp_course_title(); ?>
-					<div style="float: right;width:100px;"><?php the_course_button(get_the_ID()); ?></div>
 				</div>
 				
 				<div class="item-meta"><?php bp_course_meta(); ?></div>
@@ -133,8 +132,9 @@ if ( bp_course_has_items( $args ) ) : ?>
 				<div class="item-credits">
 					<?php krisz_course_credits(); ?>
 				</div>
+				<div class="item-button"><?php the_course_button(get_the_ID()); ?></div>
 				<div class="item-instructor">
-					<?php bp_course_instructor(); ?>
+					<?php the_course_button(get_the_ID()); ?>
 				</div>
 				<div class="item-time">
 					<?php the_course_time(); ?>
