@@ -1068,6 +1068,7 @@ function unit_traverse(){
       // END Drip Feed Check  
       
       echo '<div id="unit" class="unit_title" data-unit="'.$unit_id.'">';
+      echo get_the_title($course_id) . "<br />";
       the_unit_tags($unit_id);
       the_unit_instructor($unit_id);
       $minutes=0;
