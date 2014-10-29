@@ -741,7 +741,7 @@ if(!function_exists('tofriendlytime')){
       $subtlabel =$label.($subhowMany > 1 ? "s" : "");
       $subtimelabel=apply_filters('wplms_time_labels',$translation_measures[$subtlabel]);
 
-      $time .= ', '. $subhowMany." ".$subtimelabel;
+      //$time .= ', '. $subhowMany." ".$subtimelabel;
 
       return apply_filters('wplms_friendly_time',$time,$seconds);
   }
