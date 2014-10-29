@@ -70,9 +70,37 @@ if(isset($_GET['action']) && $_GET['action']){ // Check Action
 
 
 			$sum=$total_sum=0;
-			echo '<div class="quiz_result"><h3 class="heading">'.get_the_title($quiz_id).((isset($course) && is_numeric($course))?'<a href="'.get_permalink($course).'" class="small_link">( &larr; '.__('BACK TO COURSE','vibe').' )</a>':'').'<span class="right">'.social_sharing().' <a class="print_results"><i class="icon-printer-1"></i></a></span></h3>';
-			if(count($questions)){
+			echo '<div class="quiz_result"><h3 class="heading">'.get_the_title($quiz_id).'<span class="right">'.social_sharing().' <a class="print_results"><i class="icon-printer-1"></i></a></span></h3>';
 
+
+// Krisz - continue course button-----------
+  if(isset($course) && is_numeric($course)) {
+
+
+
+    $take_course_page_id=vibe_get_option('take_course_page');
+    if(function_exists('icl_object_id'))
+      $take_course_page_id = icl_object_id($take_course_page_id, 'page', true);
+
+   $take_course_page=get_permalink($take_course_page_id);
+//   $user_id = get_current_user_id();
+
+
+   
+             echo '<form action="'.$take_course_page.'" method="post">';
+              
+                    echo '<input type="submit" class="'.((isset($id) && $id )?'':'course_button full ').'button" value="'.__('CONTINUE COURSE','vibee').'">';
+                    wp_nonce_field('continue_course'.$user_id,'continue_course');
+                
+             
+             echo  '<input type="hidden" name="course_id" value="'.$course.'" />';
+             
+             echo  '</form>'; 
+
+}
+
+//-----------
+			if(count($questions)){
 				echo '<ul class="quiz_questions">';
 
 				foreach($questions['ques'] as $key=>$question){
@@ -141,7 +169,7 @@ if(isset($_GET['action']) && $_GET['action']){ // Check Action
 						$marks=get_comment_meta( $comment->comment_ID, 'marks', true );
 					}// END- COMMENTS-FOR
 					
-					if(isset($correct_answer) && $correct_answer !='' && isset($marks) && $marks !=''){
+					if(isset($correct_answer) && $correct_answer !='' ){
 						$explaination = get_post_meta($question,'vibe_question_explaination',true);
 						echo '<strong>';
 						_e('Correct Answer :','vibe');
@@ -330,3 +358,7 @@ if(isset($_GET['action']) && $_GET['action']){ // Check Action
 }//END ELSE
 ?>
 <?php do_action( 'bp_after_course_results' ); ?>
+<script>
+    jQuery("#course-personal-li").removeClass("current selected");
+    jQuery("#settings-custom-li").addClass("current selected");
+</script>
