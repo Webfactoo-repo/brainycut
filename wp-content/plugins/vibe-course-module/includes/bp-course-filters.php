@@ -133,13 +133,6 @@ if ( bp_course_has_items( $args ) ) : ?>
 					<?php krisz_course_credits(); ?>
 				</div>
 				<div class="item-button"><?php the_course_button(get_the_ID()); ?></div>
-				<div class="item-instructor">
-					<?php the_course_button(get_the_ID()); ?>
-				</div>
-				<div class="item-time">
-					<?php the_course_time(); ?>
-				</div>
-				<div class="item-action"><?php bp_course_action(); ?></div>
 				<?php do_action( 'bp_directory_course_item' ); ?>
 
 			</div>
