@@ -149,7 +149,7 @@ function the_course_button($id=NULL){
    $free_course= get_post_meta($course_id,'vibe_course_free',true);
 
   if(!is_user_logged_in() && vibe_validate($free_course)){
-    echo apply_filters('wplms_course_non_loggedin_user','<a href="'.get_permalink($course_id).'?error=login" class="course_button button full">'.__('TAKE THIS COURSE','vibee').'</a>'); 
+    echo apply_filters('wplms_course_non_loggedin_user','<a href="'.get_permalink($course_id).'?error=login" class="course_button button full">'.__('START COURSE','vibee').'</a>'); 
     return;
   }
 
