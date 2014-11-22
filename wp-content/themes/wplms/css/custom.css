@@ -1,0 +1,110 @@
+.course_reviews {
+    display: none;
+}
+.star-rating {
+    display: none;
+}
+.students {
+    display: none !important;
+}
+.students_undertaking {
+    display: none !important;
+}
+#groups-order-select {
+    display: none !important;
+}
+.switch_view {
+    display: none !important;
+}
+#course-personal {
+    display: none !important;
+}
+#field-visibility-settings-toggle-1 {
+    display: none !important;
+}
+.unitforum {
+display: none;
+}
+.total_students {
+display: none;
+}
+li#members {
+display: none;
+}
+.instructor {
+display: none !important;
+}
+.item-time {
+display: none !important;
+}
+.item-instructor {
+display: none !important;
+}
+#item-admins {
+display: none !important;
+}
+.timeline_wrapper {
+ overflow: visible !important;
+}
+#notifications-personal-li {
+  display: none !important;
+}
+#course-personal-li a span {
+  display: none !important;
+}
+.quiz_result .quiz_questions li .q+strong+strong{
+  display:none;
+}
+.buybutton {
+background-color: #ff0000 !important;
+}
+#curriculum {
+display: none !important;
+}
+.proctoquiz {
+  display: none !important;
+}
+#group-dir-search {
+    display: none !important;
+}
+.order-again {
+  display: none !important;
+}
+#home {
+  display: none !important;
+}
+#course-list .button.full {
+  width: auto !important;
+}
+#course-all a span {
+  display: none !important;
+}
+#activity-personal-li{
+  display: none !important;
+}
+.profile .label {
+  color:#444 !important;
+}
+input[type=text], input[type=password] {
+border-color: #444 !important;
+background-color: #eeeeee !important;
+color: #444 !important;
+}
+textarea, .chosen-single {
+border: 1px solid black !important;
+}
+#sidebar-wp-submit {
+margin-bottom: 20px !important;
+}
+.listablokk ul {
+list-style-type: circle !important; 
+}
+.listablokk ul {
+list-style-type: disc !important; 
+}
+.listablokk ol {
+list-style-type: decimal; 
+}
+.wpb_content_element .wpb_tabs_nav li.ui-tabs-active, .wpb_content_element .wpb_tabs_nav li:hover {
+background: #cccccc !important;
+}
