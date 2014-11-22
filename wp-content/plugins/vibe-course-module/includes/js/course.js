@@ -624,7 +624,8 @@ $( 'body' ).delegate( '.submit_quiz', 'click', function(event){
                 $('#ajaxloader').removeClass('disabled');
                 $('#question').css('opacity',0.2);
                 $this.find('i').remove();
-                location.reload();
+				window.location.assign(document.URL);
+                //location.reload();
             }
     });
 });
