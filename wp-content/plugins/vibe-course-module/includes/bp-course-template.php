@@ -1322,29 +1322,31 @@ function bp_get_course_check_course_complete($args=NULL){ // AUTO EVALUATION FOR
 
 			    }
 
-			    if(isset($passing_per) && $passing_per && $marks > $passing_per){
-			        $pass = array();
-			        $pass=vibe_sanitize(get_user_meta($user_id,'certificates',false));
-			        if(!empty($pass) || !in_array($id,$pass)){
-			        if(isset($pass) && is_array($pass))
-			        	$pass[]=$id;
-			        else
-			        	$pass=array($id);
-
-			        update_user_meta($user_id,'certificates',$pass);
-			        $return .='<div class="congrats_certificate">'.__('Congratulations ! You\'ve successfully passed the course and earned the Course Completion Certificate !','vibe').'</div>';
-			        bp_course_record_activity(array(
-			          'action' => __('Student got a Certificate in the course ','vibe'),
-			          'content' => __('Student ','vibe').bp_core_get_userlink($user_id).__(' got a caertificate in the course ','vibe').get_the_title($id),
-			          'type' => 'student_certificate',
-			          'item_id' => $id,
-			          'primary_link'=>get_permalink($id),
-			          'secondary_item_id'=>$user_id
-			        )); 
-
-			    	}
-			    }
-
+				$cerrrt = get_post_meta($id, "vibe_course_certificate", false);
+				if(isset($cerrrt) && is_array($cerrrt) && $cerrrt[0] != "H") {
+				    if(isset($passing_per) && $passing_per && $marks > $passing_per){
+				        $pass = array();
+				        $pass=vibe_sanitize(get_user_meta($user_id,'certificates',false));
+				        if(!empty($pass) || !in_array($id,$pass)){
+				        if(isset($pass) && is_array($pass))
+				        	$pass[]=$id;
+				        else
+				        	$pass=array($id);
+	
+				        update_user_meta($user_id,'certificates',$pass);
+				        $return .='<div class="congrats_certificate">'.__('Congratulations ! You\'ve successfully passed the course and earned the Course Completion Certificate !','vibe').'</div>';
+				        bp_course_record_activity(array(
+				          'action' => __('Student got a Certificate in the course ','vibe'),
+				          'content' => __('Student ','vibe').bp_core_get_userlink($user_id).__(' got a caertificate in the course ','vibe').get_the_title($id),
+				          'type' => 'student_certificate',
+				          'item_id' => $id,
+				          'primary_link'=>get_permalink($id),
+				          'secondary_item_id'=>$user_id
+				        )); 
+	
+				    	}
+				    }
+				}
 			    if(update_post_meta( $id,$user_id,$marks)){
 			      $message = __('You\'ve obtained ','vibe').apply_filters('wplms_course_marks',$marks.'/100').__(' in Course :','vibe').' <a href="'.get_permalink($id).'">'.get_the_title($id).'</a>';
 			      
