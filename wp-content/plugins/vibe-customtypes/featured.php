@@ -6,7 +6,7 @@ function thumbnail_generator($post,$featured_style,$cols='medium',$n=100,$link=0
     $more = __('Read more','vibe-customtypes');
     
     if(strlen($post->post_content) > $n)
-        $read_more= '<a href="'.get_permalink($post->ID).'" class="link">'.$more.'</a>';
+        $read_more= '<a href="'.get_permalink(1985).'" class="link">'.$more.'</a>';
     
     switch($featured_style){
             case 'course':
