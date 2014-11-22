@@ -6,6 +6,9 @@
  * @package BuddyPress
  * @subpackage bp-default
  */
+
+wp_redirect( home_url() ); exit;
+
 $flag=1;
 $members_view=vibe_get_option('members_view');
 
