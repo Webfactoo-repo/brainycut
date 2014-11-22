@@ -371,10 +371,30 @@ if(!class_exists('WPLMS_Customizer_Plugin_Class'))
 
         function buddypress_login_redirection($redirect_url,$request_url,$user){
             global $bp;
+
+/*
             if ( defined( 'BP_COURSE_SLUG' ) ){
-                $custom_redirect_url=bp_core_get_user_domain($user->ID).'/'.BP_COURSE_SLUG;
-                return $custom_redirect_url;    
+
+		            $newRedirUrl = bp_core_get_user_domain(24).BP_COURSE_SLUG;
+	            $siteUrl = get_site_url();
+	            if (ICL_LANGUAGE_CODE != "hu") {
+	            }
+		        	$newRedirUrl = str_replace("/members", "/".ICL_LANGUAGE_CODE."/members", $newRedirUrl);
+                return $newRedirUrl;    
             }
+*/
+            if ( defined( 'BP_COURSE_SLUG' ) ){
+            	if (!is_super_admin( $user->ID )) {
+		            if (ICL_LANGUAGE_CODE != "hu") {
+			            $redirect_url = $redirect_url . "/" . ICL_LANGUAGE_CODE . "/members/" . $user->user_login . "/course";
+					}else{
+			            $redirect_url = $redirect_url .  "members/" . $user->user_login . "/course";
+		        	}
+		        }
+	        }
+$myfile = fopen("login.log", "a") or die("Unable to open file!");
+fwrite($myfile, $redirect_url . "\n");
+fclose($myfile);
             return $redirect_url;
             
         }  
