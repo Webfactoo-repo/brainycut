@@ -1385,8 +1385,8 @@ function bp_core_validate_user_signup( $user_name, $user_email ) {
 		}
 
 		// No underscores. @todo Why not?
-		if ( false !== strpos( ' ' . $user_name, '_' ) ) {
-			$errors->add( 'user_name', __( 'Sorry, usernames may not contain the character "_"!', 'buddypress' ) );
+		if ( false !== strpos( ' ' . $user_name, '_' ) || strpos($user_name	, " ")!=0) {
+			$errors->add( 'user_name', __( 'Sorry, usernames may not contain the character "_" or space!', 'buddypress' ) );
 		}
 
 		// No usernames that are all numeric. @todo Why?
