@@ -3573,6 +3573,10 @@ span.wpcf7-form-control-wrap{
 @media (max-width: 767px) {
 	header nav{
 		display: none;
+		
+	}
+	#menu-top-menu {
+		float: left !important;
 	}
 
 	.meta .date {
@@ -3585,9 +3589,11 @@ span.wpcf7-form-control-wrap{
 		display: block;
 		clear:both;
 	}
+/*
 	#headertop .topmenu+.topmenu{
 		display: none;
 	}
+*/
 	header #trigger{
 		display: block;
 	}
