@@ -56,3 +56,14 @@ text-transform:uppercase;
 }
 
 .live-edit-sidebar,.live-edit-sidebar + .text-options{display: none;}
+@media (min-width: 992px){
+header .col-md-3{width:20% !important}
+header .col-md-9{width:80% !important}
+}
+/*
+header .col-md-3 {
+	width: 20% !important;
+}header .col-md-9 {
+	width: 80% !important;
+}
+*/
