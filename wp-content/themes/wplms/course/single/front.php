@@ -11,7 +11,6 @@ while(have_posts()):the_post();
 <div class="course_title">
 	<?php vibe_breadcrumbs(); ?>
 	<h1><?php the_title(); ?></h1>
-	<h6><?php the_excerpt(); ?></h6>
 </div>
 <div class="students_undertaking">
 	<?php
