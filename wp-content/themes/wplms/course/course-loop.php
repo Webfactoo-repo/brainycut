@@ -45,19 +45,19 @@ if ( bp_course_has_items( bp_ajax_querystring( 'course' ).'&orderby=menu_order&p
 			</div>
 
 			<div class="item">
-				<div class="item-title"  itemprop="itemreviewed"><?php bp_course_title(); if(get_post_status() != 'publish'){echo '<i> ( '.get_post_status().' ) </i>';} ?></div>
+				<div class="item-title"><?php bp_course_title(); ?>
+				</div>
+				
 				<div class="item-meta"><?php bp_course_meta(); ?></div>
 				<div class="item-desc"><?php bp_course_desc(); ?></div>
 				<div class="item-credits">
 					<?php bp_course_credits(); ?>
 				</div>
-				<div class="item-instructor">
-					<?php bp_course_instructor(); ?>
-				</div>
-				<div class="item-action"><?php bp_course_action() ?></div>
+				<div class="item-button"><?php the_course_button(get_the_ID()); ?></div>
 				<?php do_action( 'bp_directory_course_item' ); ?>
 
 			</div>
+
 
 			<div class="clear"></div>
 		</li>
