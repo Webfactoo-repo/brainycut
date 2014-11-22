@@ -39,6 +39,7 @@ if ( !class_exists('vibe_bp_login') ) {
 					       echo '<a href="'.vibe_site_url() .'wp-admin/" title="'.__('Access admin panel','vibe').'"><i class="icon-settings-1"></i></a>'; ?>
 					  </li>
 					</ul>	
+<!--
 					<ul>
 						<li><a href="<?php echo bp_loggedin_user_domain().BP_COURSE_SLUG   ?>/"><i class="icon-book-open-1"></i> <?php _e('Courses','vibe'); ?></a></li>	
 						<li><a href="<?php echo bp_loggedin_user_domain().BP_COURSE_SLUG.'/'.BP_COURSE_STATS_SLUG  ?>/"><i class="icon-analytics-chart-graph"></i> <?php _e('Stats','vibe'); ?></a></li>	
@@ -54,6 +55,7 @@ if ( !class_exists('vibe_bp_login') ) {
 						<li><a href="<?php echo bp_loggedin_user_domain() . BP_GROUPS_SLUG ?>/"><i class="icon-myspace-alt"></i> <?php _e('Groups','vibe'); ?></a></li>
 						<?php endif; ?>
 					</ul>
+-->
 				
 				<?php
 				do_action( 'bp_sidebar_me' ); ?>
