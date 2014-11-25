@@ -1,6 +1,7 @@
 <?php get_header( 'buddypress' ); 
 
 global $bp;
+$pageID = get_the_ID();
 
 if(bp_is_course_component()){
 	if(bp_is_single_item()){
@@ -100,7 +101,7 @@ if(bp_is_course_component()){
 			</div>	
 			<div class="col-md-3 col-sm-4">
 				<?php
-					$sidebar = apply_filters('wplms_sidebar','buddypress',get_the_ID());
+					$sidebar = apply_filters('wplms_sidebar','buddypress',$pageID);
 	                if ( !function_exists('dynamic_sidebar')|| !dynamic_sidebar($sidebar) ) : ?>
                	<?php endif; ?>
 			</div>
